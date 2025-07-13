@@ -1,0 +1,97 @@
+.menuContainer {
+
+    width: 100%;
+    grid-row: span 1;
+
+}
+
+.menuSuspensoBtn {
+
+    background-color: transparent;
+    border: none;
+    width: 2em;
+    height: 1em;
+    position: relative;
+    z-index: 100;
+
+
+}
+
+.menuSuspensoIcon {
+
+    width: clamp(48px, 3vw + 6px, 4rem);
+    height: clamp(48px, 3vw + 6px, 4rem);
+
+}
+
+.menuLista {
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: clamp(16px, 4vw + 8px, 4rem);
+
+}
+
+.menuListaItem {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: row;
+
+}
+
+.link {
+
+    text-decoration: none;
+    font-weight: 650;
+
+}
+
+.link:hover {
+
+    text-decoration: underline;
+
+}
+
+.mostrar {
+
+    display: flex;
+
+}
+
+.esconder {
+
+    display: none;
+
+}
+
+@media (max-width:720px) {
+
+    .menuContainer {
+
+        
+        
+
+    }
+    .menuLista {
+
+
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    width: clamp(3em, 40vw, 10em);
+    background: var(--bg-color);
+    height: 100%;
+    z-index: 100;
+
+
+}
+
+}

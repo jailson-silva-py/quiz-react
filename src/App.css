@@ -1,0 +1,11 @@
+#root {
+
+  background: var(--conic-background);
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 10%;
+
+}

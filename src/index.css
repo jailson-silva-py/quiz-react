@@ -1,0 +1,46 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+
+}
+
+html, body {
+    
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100%;
+    width: 100%;
+    background: var(--conic-background);
+
+}
+
+
+:root[data-theme="dark"] {
+
+  --text-color: rgb(243, 236, 236);
+  --hover-link: rgb(61, 61, 126);
+  --btn-bg: rgb(38, 36, 36);
+  --bg-color: rgb(3, 3, 3);
+  --btn-gradient: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+  --btn-gradient-hover: linear-gradient(180deg, #232526 0%, #414345  51%, #232526  100%);
+  --bg-gradient-color-1: rgb(20, 20, 20);
+  --bg-gradient-color-2: rgb(21, 21, 21);
+  --shadow-default-color: rgba(255, 255, 255, 0.5);
+  --conic-background: conic-gradient(
+
+    var(--bg-gradient-color-1) 0deg 60deg,
+    var(--bg-gradient-color-2) 60deg 120deg,
+    var(--bg-gradient-color-1) 120deg 180deg,
+    var(--bg-gradient-color-2) 180deg 240deg,
+    var(--bg-gradient-color-1) 240deg 300deg,
+    var(--bg-gradient-color-2) 300deg 360deg
+    
+
+  );
+
+
+}
