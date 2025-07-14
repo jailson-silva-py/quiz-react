@@ -1,9 +1,10 @@
+import { useEffect } from "react"
 import useTypeQuizContext from "../hooks/useTypeQuizContext"
 
 const Quiz = () => {
 
     const {state} = useTypeQuizContext()
-    console.log(state.categoria, state.nivel)
+
     return (
     <>
     

@@ -1,0 +1,728 @@
+{
+    "facil": [
+      {
+        "id": 1,
+        "titulo": "Declaracao de variavel",
+        "enunciado": "Qual a diferenca principal entre var, let e const?",
+        "perguntas": [
+          "var tem escopo de funcao, let e const tem escopo de bloco",
+          "let nao permite redeclaracao, const nao permite reatribuir valor",
+          "const cria variaveis globais",
+          "var e let sao equivalentes"
+        ],
+        "respostaCorreta": "let nao permite redeclaracao, const nao permite reatribuir valor"
+      },
+      {
+        "id": 2,
+        "titulo": "Tipo de dado",
+        "enunciado": "Qual o resultado de typeof 123?",
+        "perguntas": [
+          "number",
+          "string",
+          "object",
+          "undefined"
+        ],
+        "respostaCorreta": "number"
+      },
+      {
+        "id": 3,
+        "titulo": "Operador de igualdade",
+        "enunciado": "Qual a diferenca entre == e ===?",
+        "perguntas": [
+          "== compara valor, === compara valor e tipo",
+          "== e === sao iguais",
+          "=== faz conversao de tipo",
+          "== compara apenas tipo"
+        ],
+        "respostaCorreta": "== compara valor, === compara valor e tipo"
+      },
+      {
+        "id": 4,
+        "titulo": "Concatenacao de strings",
+        "enunciado": "Como voce concatena strings em JS?",
+        "perguntas": [
+          "com o operador +",
+          "com o operador &",
+          "com o metodo concat do Array",
+          "com o operador &&"
+        ],
+        "respostaCorreta": "com o operador +"
+      },
+      {
+        "id": 5,
+        "titulo": "Criacao de array",
+        "enunciado": "Como criar um array vazio em JS?",
+        "perguntas": [
+          "[]",
+          "()",
+          "{}",
+          "new Array()"
+        ],
+        "respostaCorreta": "[]"
+      },
+      {
+        "id": 6,
+        "titulo": "Loop for",
+        "enunciado": "Quantas vezes o loop a seguir sera executado? for(let i=0;i<3;i++){ }",
+        "perguntas": [
+          "3 vezes",
+          "2 vezes",
+          "4 vezes",
+          "1 vez"
+        ],
+        "respostaCorreta": "3 vezes"
+      },
+      {
+        "id": 7,
+        "titulo": "Declaracao de funcao",
+        "enunciado": "Como voce declara uma funcao chamada foo?",
+        "perguntas": [
+          "function foo() {}",
+          "func foo() {}",
+          "def foo() {}",
+          "lambda foo() {}"
+        ],
+        "respostaCorreta": "function foo() {}"
+      },
+      {
+        "id": 8,
+        "titulo": "Arrow function basica",
+        "enunciado": "Qual a sintaxe correta de uma arrow function que retorna x*2?",
+        "perguntas": [
+          "x => x*2",
+          "(x) => { return x*2; }",
+          "function(x){ return x*2; }",
+          "x => { x*2 }"
+        ],
+        "respostaCorreta": "x => x*2"
+      },
+      {
+        "id": 9,
+        "titulo": "Objeto literal",
+        "enunciado": "Como voce define um objeto com a propriedade name igual a 'Joao'?",
+        "perguntas": [
+          "{ name: 'Joao' }",
+          "object{name:'Joao'}",
+          "[ name: 'Joao' ]",
+          "{ 'name' == 'Joao' }"
+        ],
+        "respostaCorreta": "{ name: 'Joao' }"
+      },
+      {
+        "id": 10,
+        "titulo": "Acesso a propriedade",
+        "enunciado": "Como acessar a propriedade age de um objeto user?",
+        "perguntas": [
+          "user.age",
+          "user['age']",
+          "Ambas as anteriores",
+          "Nenhuma acima"
+        ],
+        "respostaCorreta": "Ambas as anteriores"
+      },
+      {
+        "id": 11,
+        "titulo": "Template literals",
+        "enunciado": "Como voce insere a variavel nome dentro de uma string usando template literal?",
+        "perguntas": [
+          "`Ola, ${nome}`",
+          "'Ola, ${nome}'",
+          "\"Ola, nome\"",
+          "Ola, nome"
+        ],
+        "respostaCorreta": "`Ola, ${nome}`"
+      },
+      {
+        "id": 12,
+        "titulo": "Incremento",
+        "enunciado": "Qual a diferenca entre i++ e ++i?",
+        "perguntas": [
+          "i++ retorna o valor antes de incrementar, ++i retorna depois",
+          "Nenhuma diferenca",
+          "++i nao incrementa",
+          "i++ e ++i sao invalidos"
+        ],
+        "respostaCorreta": "i++ retorna o valor antes de incrementar, ++i retorna depois"
+      },
+      {
+        "id": 13,
+        "titulo": "Operador ternario",
+        "enunciado": "Qual a sintaxe do operador ternario?",
+        "perguntas": [
+          "condicao ? valor1 : valor2",
+          "if(condicao) valor1 else valor2",
+          "condicao : valor1 ? valor2",
+          "condicao ? valor1, valor2"
+        ],
+        "respostaCorreta": "condicao ? valor1 : valor2"
+      },
+      {
+        "id": 14,
+        "titulo": "Null vs undefined",
+        "enunciado": "Qual o typeof de null?",
+        "perguntas": [
+          "object",
+          "null",
+          "undefined",
+          "boolean"
+        ],
+        "respostaCorreta": "object"
+      },
+      {
+        "id": 15,
+        "titulo": "Switch basico",
+        "enunciado": "Para que serve a palavra-chave break dentro de um switch?",
+        "perguntas": [
+          "Interrompe o switch evitando fall-through",
+          "Reinicia o switch",
+          "Sai da funcao",
+          "Nao tem utilidade"
+        ],
+        "respostaCorreta": "Interrompe o switch evitando fall-through"
+      },
+      {
+        "id": 16,
+        "titulo": "Metodo push",
+        "enunciado": "O que faz o metodo array.push(item)?",
+        "perguntas": [
+          "Adiciona item ao final do array",
+          "Remove item do array",
+          "Adiciona item no inicio do array",
+          "Retorna o array original"
+        ],
+        "respostaCorreta": "Adiciona item ao final do array"
+      },
+      {
+        "id": 17,
+        "titulo": "Metodo indexOf",
+        "enunciado": "O que retorna arr.indexOf(valor) se valor nao estiver no array?",
+        "perguntas": [
+          "-1",
+          "0",
+          "undefined",
+          "null"
+        ],
+        "respostaCorreta": "-1"
+      },
+      {
+        "id": 18,
+        "titulo": "ParseInt basico",
+        "enunciado": "Qual a funcao de parseInt('10', 2)?",
+        "perguntas": [
+          "Converte '10' da base 2 para base 10",
+          "Converte '10' de string para numero decimal",
+          "Retorna NaN",
+          "Retorna 2"
+        ],
+        "respostaCorreta": "Converte '10' da base 2 para base 10"
+      },
+      {
+        "id": 19,
+        "titulo": "Math.random",
+        "enunciado": "Qual o intervalo de valores retornados por Math.random()?",
+        "perguntas": [
+          "0 (inclusivo) até 1 (exclusivo)",
+          "0 a 1 inclusive",
+          "1 a 100",
+          "-1 a 1"
+        ],
+        "respostaCorreta": "0 (inclusivo) até 1 (exclusivo)"
+      },
+      {
+        "id": 20,
+        "titulo": "Operador typeof",
+        "enunciado": "Qual o resultado de typeof []?",
+        "perguntas": [
+          "object",
+          "array",
+          "undefined",
+          "function"
+        ],
+        "respostaCorreta": "object"
+      }
+    ],
+    "medio": [
+      {
+        "id": 1,
+        "titulo": "Closure basico",
+        "enunciado": "O que e closure em JavaScript?",
+        "perguntas": [
+          "Funcao que lembra seu escopo lexico",
+          "Funcao anonima",
+          "Variavel global",
+          "Metodo de classe"
+        ],
+        "respostaCorreta": "Funcao que lembra seu escopo lexico"
+      },
+      {
+        "id": 2,
+        "titulo": "Promise basica",
+        "enunciado": "Qual metodo e usado para lidar com sucesso em uma promise?",
+        "perguntas": [
+          "then",
+          "catch",
+          "finally",
+          "resolve"
+        ],
+        "respostaCorreta": "then"
+      },
+      {
+        "id": 3,
+        "titulo": "Async/Await",
+        "enunciado": "Para que serve a palavra-chave async?",
+        "perguntas": [
+          "Define funcao que retorna uma promise",
+          "Faz funcao rodar em background",
+          "Executa codigo assincrono sem promise",
+          "Torna funcao sincrona"
+        ],
+        "respostaCorreta": "Define funcao que retorna uma promise"
+      },
+      {
+        "id": 4,
+        "titulo": "This em objeto",
+        "enunciado": "Dentro de um metodo de objeto, this referencia o que?",
+        "perguntas": [
+          "O proprio objeto",
+          "A funcao",
+          "Window/global",
+          "undefined"
+        ],
+        "respostaCorreta": "O proprio objeto"
+      },
+      {
+        "id": 5,
+        "titulo": "Prototypes",
+        "enunciado": "Para que serve o prototype em JS?",
+        "perguntas": [
+          "Compartilhar propriedades e metodos entre instancias",
+          "Criar variavel global",
+          "Declarar funcao",
+          "Gerar erro"
+        ],
+        "respostaCorreta": "Compartilhar propriedades e metodos entre instancias"
+      },
+      {
+        "id": 6,
+        "titulo": "Map array",
+        "enunciado": "O que o metodo array.map(f) retorna?",
+        "perguntas": [
+          "Um novo array com resultados de f",
+          "O array original",
+          "Numero de itens",
+          "undefined"
+        ],
+        "respostaCorreta": "Um novo array com resultados de f"
+      },
+      {
+        "id": 7,
+        "titulo": "Filter array",
+        "enunciado": "Qual o resultado de array.filter(f)?",
+        "perguntas": [
+          "Novo array com items que passam em f",
+          "Array alterado",
+          "Numero de items",
+          "undefined"
+        ],
+        "respostaCorreta": "Novo array com items que passam em f"
+      },
+      {
+        "id": 8,
+        "titulo": "Reduce array",
+        "enunciado": "Para que serve array.reduce((acc,cur)=>..., inicial)?",
+        "perguntas": [
+          "Acumular valores em um so valor",
+          "Filtrar valores",
+          "Ordenar array",
+          "Converter string"
+        ],
+        "respostaCorreta": "Acumular valores em um so valor"
+      },
+      {
+        "id": 9,
+        "titulo": "Call e apply",
+        "enunciado": "Qual a diferenca entre call e apply?",
+        "perguntas": [
+          "call recebe lista de args, apply recebe array",
+          "apply recebe lista de args, call recebe array",
+          "Nenhuma",
+          "call nao existe"
+        ],
+        "respostaCorreta": "call recebe lista de args, apply recebe array"
+      },
+      {
+        "id": 10,
+        "titulo": "Bind",
+        "enunciado": "O que faz funcao.bind(obj)?",
+        "perguntas": [
+          "Cria nova funcao com this amarrado a obj",
+          "Chama funcao com obj",
+          "Altera this global",
+          "Nao faz nada"
+        ],
+        "respostaCorreta": "Cria nova funcao com this amarrado a obj"
+      },
+      {
+        "id": 11,
+        "titulo": "Event Loop",
+        "enunciado": "Em que fila as promises resolvidas sao enfileiradas?",
+        "perguntas": [
+          "Microtask queue",
+          "Callback queue",
+          "Render queue",
+          "Job queue"
+        ],
+        "respostaCorreta": "Microtask queue"
+      },
+      {
+        "id": 12,
+        "titulo": "Destructuring",
+        "enunciado": "O que faz const {a, b} = obj?",
+        "perguntas": [
+          "Extrai propriedades a e b de obj",
+          "Cria novo objeto",
+          "Atribui valores padrao",
+          "Renomeia chaves"
+        ],
+        "respostaCorreta": "Extrai propriedades a e b de obj"
+      },
+      {
+        "id": 13,
+        "titulo": "Spread operator",
+        "enunciado": "Para que serve o operador ... em arrays?",
+        "perguntas": [
+          "Espalhar elementos em outro array",
+          "Juntar dois arrays",
+          "Remover elementos",
+          "Retornar indice"
+        ],
+        "respostaCorreta": "Espalhar elementos em outro array"
+      },
+      {
+        "id": 14,
+        "titulo": "Default parameters",
+        "enunciado": "Qual o propósito de function f(x=1)?",
+        "perguntas": [
+          "Definir valor padrao para x se undefined",
+          "Tornar x opcional sem valor",
+          "Evitar erros",
+          "Nao faz nada"
+        ],
+        "respostaCorreta": "Definir valor padrao para x se undefined"
+      },
+      {
+        "id": 15,
+        "titulo": "Callback hell",
+        "enunciado": "O que e callback hell?",
+        "perguntas": [
+          "Muitos callbacks aninhados tornando o codigo confuso",
+          "Erro de callback",
+          "Callback unico",
+          "Erro de sintaxe"
+        ],
+        "respostaCorreta": "Muitos callbacks aninhados tornando o codigo confuso"
+      },
+      {
+        "id": 16,
+        "titulo": "Hoisting",
+        "enunciado": "O que acontece com declaracoes de variaveis antes da execucao?",
+        "perguntas": [
+          "Sao elevadas para o topo do escopo",
+          "Sao removidas",
+          "Nao sao afetadas",
+          "Sao convertidas em constantes"
+        ],
+        "respostaCorreta": "Sao elevadas para o topo do escopo"
+      },
+      {
+        "id": 17,
+        "titulo": "Tagged templates",
+        "enunciado": "Para que servem tagged templates com sintaxe tag`str`?",
+        "perguntas": [
+          "Customizar processamento do template literal",
+          "Declarar funcao",
+          "Concatenar strings",
+          "Validar input"
+        ],
+        "respostaCorreta": "Customizar processamento do template literal"
+      },
+      {
+        "id": 18,
+        "titulo": "Dynamic import",
+        "enunciado": "Qual sintaxe para importar modulo dinamicamente?",
+        "perguntas": [
+          "import('modulo')",
+          "require('modulo')",
+          "import modulo",
+          "export('modulo')"
+        ],
+        "respostaCorreta": "import('modulo')"
+      },
+      {
+        "id": 19,
+        "titulo": "Async iterator",
+        "enunciado": "Como voce consome um async iterator?",
+        "perguntas": [
+          "for await...of",
+          "for...of",
+          "while",
+          "map"
+        ],
+        "respostaCorreta": "for await...of"
+      },
+      {
+        "id": 20,
+        "titulo": "Template string multiline",
+        "enunciado": "Como criar string multiline sem concatenar?",
+        "perguntas": [
+          "Usando template literals",
+          "Usando \\n no string normal",
+          "Com operacao +",
+          "Com array.join"
+        ],
+        "respostaCorreta": "Usando template literals"
+      }
+    ],
+    "dificil": [
+      {
+        "id": 1,
+        "titulo": "Generator basico",
+        "enunciado": "Como voce define uma generator function?",
+        "perguntas": [
+          "function* nome() {}",
+          "function nome*() {}",
+          "function nome() yield {}",
+          "generator function nome() {}"
+        ],
+        "respostaCorreta": "function* nome() {}"
+      },
+      {
+        "id": 2,
+        "titulo": "Symbol",
+        "enunciado": "Para que serve Symbol em JS?",
+        "perguntas": [
+          "Criar identificador unico",
+          "Declarar variavel",
+          "Substituir string",
+          "Definir objeto imutavel"
+        ],
+        "respostaCorreta": "Criar identificador unico"
+      },
+      {
+        "id": 3,
+        "titulo": "Proxy",
+        "enunciado": "O que o objeto Proxy permite fazer?",
+        "perguntas": [
+          "Interceptar operacoes em um objeto",
+          "Clonar objeto",
+          "Proteger objeto de alteracoes",
+          "Converter objeto em string"
+        ],
+        "respostaCorreta": "Interceptar operacoes em um objeto"
+      },
+      {
+        "id": 4,
+        "titulo": "Reflect API",
+        "enunciado": "Para que serve Reflect.get(obj, prop)?",
+        "perguntas": [
+          "Obter valor de propriedade",
+          "Definir valor",
+          "Deletar propriedade",
+          "Validar tipo"
+        ],
+        "respostaCorreta": "Obter valor de propriedade"
+      },
+      {
+        "id": 5,
+        "titulo": "WeakMap vs Map",
+        "enunciado": "Qual a diferenca principal entre WeakMap e Map?",
+        "perguntas": [
+          "WeakMap permite garbage collection de chaves nao referenciadas",
+          "Map permite garbage collection de chaves",
+          "Nem um nem outro",
+          "Map armazena chaves fracas"
+        ],
+        "respostaCorreta": "WeakMap permite garbage collection de chaves nao referenciadas"
+      },
+      {
+        "id": 6,
+        "titulo": "Web Worker",
+        "enunciado": "Para que servem Web Workers?",
+        "perguntas": [
+          "Executar scripts em thread separada",
+          "Renderizar UI",
+          "Fazer chamadas HTTP",
+          "Manipular DOM"
+        ],
+        "respostaCorreta": "Executar scripts em thread separada"
+      },
+      {
+        "id": 7,
+        "titulo": "Service Worker",
+        "enunciado": "Qual a funcao principal de um Service Worker?",
+        "perguntas": [
+          "Gerenciar cache e trabalhar offline",
+          "Executar animacoes",
+          "Validar formulario",
+          "Renderizar componentes"
+        ],
+        "respostaCorreta": "Gerenciar cache e trabalhar offline"
+      },
+      {
+        "id": 8,
+        "titulo": "Memoria e closures",
+        "enunciado": "Como closures podem causar memory leaks?",
+        "perguntas": [
+          "Retendo referencia a variaveis que nao sao mais usadas",
+          "Deletando funcoes",
+          "Convertendo objetos em string",
+          "Criando variaveis globais"
+        ],
+        "respostaCorreta": "Retendo referencia a variaveis que nao sao mais usadas"
+      },
+      {
+        "id": 9,
+        "titulo": "Performance optimization",
+        "enunciado": "Qual tecnica e usada para reduzir repaints no DOM?",
+        "perguntas": [
+          "Document fragments",
+          "setTimeout",
+          "InnerHTML direto",
+          "alert()"
+        ],
+        "respostaCorreta": "Document fragments"
+      },
+      {
+        "id": 10,
+        "titulo": "Tail call optimization",
+        "enunciado": "O JS padrao faz otimizacao de tail call?",
+        "perguntas": [
+          "Nao na maioria das engines",
+          "Sim em todas engines",
+          "Somente no browser",
+          "Somente no Node.js"
+        ],
+        "respostaCorreta": "Nao na maioria das engines"
+      },
+      {
+        "id": 11,
+        "titulo": "Dynamic prototype",
+        "enunciado": "Como voce adiciona metodo dinamicamente ao prototype?",
+        "perguntas": [
+          "Constructor.prototype.metodo = funcao",
+          "obj.prototype.metodo = funcao",
+          "addPrototype(obj, metodo)",
+          "prototype.add(metodo)"
+        ],
+        "respostaCorreta": "Constructor.prototype.metodo = funcao"
+      },
+      {
+        "id": 12,
+        "titulo": "Custom iterator",
+        "enunciado": "Qual simbolo voce implementa para criar um iterator custom?",
+        "perguntas": [
+          "Symbol.iterator",
+          "Symbol.custom",
+          "Symbol.next",
+          "Symbol.iterator()"
+        ],
+        "respostaCorreta": "Symbol.iterator"
+      },
+      {
+        "id": 13,
+        "titulo": "Importacao condicional",
+        "enunciado": "Como voce carrega modulo condicionalmente usando import dinamico?",
+        "perguntas": [
+          "if(cond) import('modulo')",
+          "require('modulo')",
+          "import modulo",
+          "export('modulo')"
+        ],
+        "respostaCorreta": "if(cond) import('modulo')"
+      },
+      {
+        "id": 14,
+        "titulo": "Bytecode JS",
+        "enunciado": "O bytecode JS e gerado por qual processo?",
+        "perguntas": [
+          "Compile-to-bytecode interno da engine",
+          "Transpilacao Babel",
+          "Minificacao",
+          "Interpretacao no browser"
+        ],
+        "respostaCorreta": "Compile-to-bytecode interno da engine"
+      },
+      {
+        "id": 15,
+        "titulo": "ES modules vs CommonJS",
+        "enunciado": "Qual a extensao de arquivo de um modulo ES6?",
+        "perguntas": [
+          ".mjs",
+          ".js",
+          ".cjs",
+          ".esm"
+        ],
+        "respostaCorreta": ".mjs"
+      },
+      {
+        "id": 16,
+        "titulo": "Event delegation avancado",
+        "enunciado": "Qual o beneficio do event delegation?",
+        "perguntas": [
+          "Menos listeners e melhor performance",
+          "Maior complexidade",
+          "Mais memoria",
+          "Redundancia"
+        ],
+        "respostaCorreta": "Menos listeners e melhor performance"
+      },
+      {
+        "id": 17,
+        "titulo": "Intl API",
+        "enunciado": "Para que serve a Intl.DateTimeFormat?",
+        "perguntas": [
+          "Formatar datas de acordo com localidade",
+          "Criar objeto Date",
+          "Converter string",
+          "Nada"
+        ],
+        "respostaCorreta": "Formatar datas de acordo com localidade"
+      },
+      {
+        "id": 18,
+        "titulo": "Memoria fraca",
+        "enunciado": "Qual a funcao de WeakRef em JS?",
+        "perguntas": [
+          "Manter referencia fraca que nao impede garbage collection",
+          "Evitar memory leak",
+          "Impedir coletor de lixo",
+          "Garantir forte referencia"
+        ],
+        "respostaCorreta": "Manter referencia fraca que nao impede garbage collection"
+      },
+      {
+        "id": 19,
+        "titulo": "Import meta",
+        "enunciado": "O que e import.meta.url?",
+        "perguntas": [
+          "URL do modulo atual",
+          "Url do site",
+          "Url da importacao",
+          "Nada"
+        ],
+        "respostaCorreta": "URL do modulo atual"
+      },
+      {
+        "id": 20,
+        "titulo": "DataView",
+        "enunciado": "Para que serve o DataView em ArrayBuffer?",
+        "perguntas": [
+          "Ler e escrever dados com controle de endianness",
+          "Manipular DOM",
+          "Criar arrays normais",
+          "Converter string"
+        ],
+        "respostaCorreta": "Ler e escrever dados com controle de endianness"
+      }
+    ]
+}

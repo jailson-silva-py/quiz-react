@@ -4,6 +4,8 @@ import App from "./App";
 import Home from './pages/Home'
 import Quiz from './pages/Quiz'
 import { TypeQuizContextProvider } from "./contexts/TypeQuizContext";
+import Sobre from './pages/Sobre'
+import Contato from './pages/Contato'
 
 const rotasArray:RouteObject[] = [
 
@@ -25,8 +27,19 @@ const rotasArray:RouteObject[] = [
                 element:<Quiz/>
 
             },
-            
+            {
 
+                path:'/sobre',
+                element:<Sobre/>
+
+            }, 
+            {
+
+                path:'/contato',
+                element:<Contato/>
+
+            }, 
+            
         ]
 
     }

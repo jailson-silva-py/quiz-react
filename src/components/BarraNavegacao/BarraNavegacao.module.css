@@ -17,6 +17,12 @@
 
 }
 
+.icon {
+
+    stroke-width: 1;
+
+}
+
 .menuSuspensoIcon {
 
     width: clamp(48px, 3vw + 6px, 4rem);
@@ -39,20 +45,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    display: row;
+    flex-direction: row;
+    gap:.4rem;
 
 }
 
 .link {
 
     text-decoration: none;
-    font-weight: 650;
+
+}
+
+.active {
+
+    color:var(--hover-link);
 
 }
 
 .link:hover {
 
     text-decoration: underline;
+}
+
+.link:hover + .icon {
+
+    stroke-width: 1.2;
+    background-color: red;
 
 }
 
@@ -82,6 +100,7 @@
     padding-top: 2rem;
     width: clamp(3em, 40vw, 10em);
     background: var(--bg-color);
+    opacity: .98;
     height: 100%;
     z-index: 100;
 

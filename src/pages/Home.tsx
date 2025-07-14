@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import classes from '../styles/Home.module.css'
 import { type ChangeEvent, type FormEvent } from 'react'
 import useTypeQuizContext from '../hooks/useTypeQuizContext'
+import { motion } from 'framer-motion'
 
 const Home = () => {
 
@@ -29,24 +30,28 @@ const Home = () => {
 
     return (
 
-        <main className={classes.content}>
+        <motion.main initial={{opacity:0, translateY:"-100%"}}
+        animate={{opacity:1, translateY:"0"}}
+        transition={{duration:1}}
+        className={classes.content}>
         <h1>Bem-vindo ao Infinity Quiz</h1>
         <p>Por favor, selecione o nível de dificuldade e a categoria para continuar.</p>
 
         <form onSubmit={handleSubmit} className={classes.formulario}>
 
 
-        <select onChange={handleNivelSeletor} className={classes.seletor}>
+        <motion.select onChange={handleNivelSeletor} className={classes.seletor}
+        required>
 
             <option value="">-- Selecione o nível --</option>
             <option value="facil">Fácil</option>
             <option value="medio">Médio</option>
             <option value="dificil">Difícil</option>
           
-        </select>
+        </motion.select>
 
 
-        <select onChange={handleCategoriaSeletor} className={classes.seletor}>
+        <select onChange={handleCategoriaSeletor} className={classes.seletor} required>
 
             <option value="" className={classes.nivelSeletorOp}>-- Selecione a categoria --</option>
             <option value="js">Javascript</option>
@@ -62,7 +67,7 @@ const Home = () => {
         
         <button type="submit" className={classes.btn}>Iniciar</button>
         </form>
-        </main>
+        </motion.main>
 
     )
 

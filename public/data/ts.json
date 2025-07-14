@@ -1,0 +1,728 @@
+{
+    "facil": [
+      {
+        "id": 1,
+        "titulo": "Declaração de variável",
+        "enunciado": "Como você declara uma variável do tipo número em TS?",
+        "perguntas": [
+          "let x: number = 5;",
+          "var x = 5;",
+          "const x: any = 5;",
+          "number x = 5;"
+        ],
+        "respostaCorreta": "let x: number = 5;"
+      },
+      {
+        "id": 2,
+        "titulo": "Extensão de arquivo",
+        "enunciado": "Qual extensão de arquivo é usada para TypeScript?",
+        "perguntas": [
+          ".ts",
+          ".js",
+          ".tsx",
+          ".jsx"
+        ],
+        "respostaCorreta": ".ts"
+      },
+      {
+        "id": 3,
+        "titulo": "Inferência de tipo",
+        "enunciado": "Qual tipo o TS infere em `let nome = 'João';`?",
+        "perguntas": [
+          "string",
+          "any",
+          "unknown",
+          "object"
+        ],
+        "respostaCorreta": "string"
+      },
+      {
+        "id": 4,
+        "titulo": "Array tipado",
+        "enunciado": "Como declarar um array de strings?",
+        "perguntas": [
+          "let arr: string[] = [];",
+          "let arr: Array = [];",
+          "let arr: [] = [''];",
+          "let arr: any = [];"
+        ],
+        "respostaCorreta": "let arr: string[] = [];"
+      },
+      {
+        "id": 5,
+        "titulo": "Any",
+        "enunciado": "Qual o comportamento do tipo `any`?",
+        "perguntas": [
+          "Desativa verificações de tipo",
+          "É igual a string",
+          "É igual a number",
+          "Só aceita null"
+        ],
+        "respostaCorreta": "Desativa verificações de tipo"
+      },
+      {
+        "id": 6,
+        "titulo": "Enum básico",
+        "enunciado": "Como declarar um enum chamado `Color`?",
+        "perguntas": [
+          "enum Color { Red, Green, Blue }",
+          "enum Color = ['Red','Green','Blue']",
+          "type Color = 'Red' | 'Green' | 'Blue';",
+          "const Color = ['Red','Green','Blue'];"
+        ],
+        "respostaCorreta": "enum Color { Red, Green, Blue }"
+      },
+      {
+        "id": 7,
+        "titulo": "Tupla",
+        "enunciado": "Qual sintaxe de tupla para [string, number]?",
+        "perguntas": [
+          "let t: [string, number] = ['a', 1];",
+          "let t: tuple = ['a', 1];",
+          "let t: (string, number) = ['a', 1];",
+          "let t: [number, string] = [1, 'a'];"
+        ],
+        "respostaCorreta": "let t: [string, number] = ['a', 1];"
+      },
+      {
+        "id": 8,
+        "titulo": "Interface simples",
+        "enunciado": "Como você define uma interface `User` com nome string?",
+        "perguntas": [
+          "interface User { name: string; }",
+          "type User = { name };",
+          "class User { name: string }",
+          "interface User (name: string);"
+        ],
+        "respostaCorreta": "interface User { name: string; }"
+      },
+      {
+        "id": 9,
+        "titulo": "Parâmetro opcional",
+        "enunciado": "Como declarar parâmetro opcional em função?",
+        "perguntas": [
+          "function f(x?: number) {}",
+          "function f(x: number?) {}",
+          "function f?(x: number) {}",
+          "function f(x=number) {}"
+        ],
+        "respostaCorreta": "function f(x?: number) {}"
+      },
+      {
+        "id": 10,
+        "titulo": "Non-null assertion",
+        "enunciado": "Para que serve o operador `!` após uma variável?",
+        "perguntas": [
+          "Assegura que não é null nem undefined",
+          "Converte para boolean",
+          "Ignora a variável",
+          "Define como readonly"
+        ],
+        "respostaCorreta": "Assegura que não é null nem undefined"
+      },
+      {
+        "id": 11,
+        "titulo": "Union type",
+        "enunciado": "Como declarar uma variável que aceita string ou number?",
+        "perguntas": [
+          "let x: string | number;",
+          "let x: string & number;",
+          "let x: union<string, number>;",
+          "let x: any;"
+        ],
+        "respostaCorreta": "let x: string | number;"
+      },
+      {
+        "id": 12,
+        "titulo": "Type alias",
+        "enunciado": "Como criar um alias chamado `ID` para number?",
+        "perguntas": [
+          "type ID = number;",
+          "alias ID = number;",
+          "let ID = number;",
+          "interface ID = number;"
+        ],
+        "respostaCorreta": "type ID = number;"
+      },
+      {
+        "id": 13,
+        "titulo": "Readonly",
+        "enunciado": "O que faz a propriedade `readonly` em uma interface?",
+        "perguntas": [
+          "Impede reatribuição após inicialização",
+          "Impede leitura",
+          "Impede exclusão",
+          "Impede declaração"
+        ],
+        "respostaCorreta": "Impede reatribuição após inicialização"
+      },
+      {
+        "id": 14,
+        "titulo": "typeof tipo",
+        "enunciado": "Para quê serve `typeof` no contexto de tipos?",
+        "perguntas": [
+          "Capturar o tipo de uma variável",
+          "Retornar string do tipo",
+          "Converter tipos",
+          "Criar tipos genéricos"
+        ],
+        "respostaCorreta": "Capturar o tipo de uma variável"
+      },
+      {
+        "id": 15,
+        "titulo": "TSConfig",
+        "enunciado": "Qual comando gera um tsconfig.json inicial?",
+        "perguntas": [
+          "tsc --init",
+          "tsc init",
+          "tsc --create",
+          "tsc config"
+        ],
+        "respostaCorreta": "tsc --init"
+      },
+      {
+        "id": 16,
+        "titulo": "Compilação",
+        "enunciado": "O que o comando `tsc` faz?",
+        "perguntas": [
+          "Transpila TS para JS",
+          "Roda testes",
+          "Inicia servidor",
+          "Formata código"
+        ],
+        "respostaCorreta": "Transpila TS para JS"
+      },
+      {
+        "id": 17,
+        "titulo": "Unknown",
+        "enunciado": "Qual a diferença entre `any` e `unknown`?",
+        "perguntas": [
+          "`unknown` é tipo seguro, exige checagem antes de usar",
+          "`unknown` aceita tudo sem restrição",
+          "`any` não existe",
+          "`unknown` converte para string"
+        ],
+        "respostaCorreta": "`unknown` é tipo seguro, exige checagem antes de usar"
+      },
+      {
+        "id": 18,
+        "titulo": "Generic básico",
+        "enunciado": "Qual sintaxe de função genérica que retorna o argumento?",
+        "perguntas": [
+          "function id<T>(arg: T): T { return arg; }",
+          "function id(arg) { return arg; }",
+          "let id = <T>(arg) => arg;",
+          "type id<T> = T;"
+        ],
+        "respostaCorreta": "function id<T>(arg: T): T { return arg; }"
+      },
+      {
+        "id": 19,
+        "titulo": "Module resolution",
+        "enunciado": "Como importar módulo `utils.ts` em TS?",
+        "perguntas": [
+          "import { fn } from './utils';",
+          "require('./utils.ts');",
+          "import utils from 'utils';",
+          "include './utils.ts';"
+        ],
+        "respostaCorreta": "import { fn } from './utils';"
+      },
+      {
+        "id": 20,
+        "titulo": "Strict mode",
+        "enunciado": "Qual opção do tsconfig ativa checagens estritas?",
+        "perguntas": [
+          "\"strict\": true",
+          "\"safe\": true",
+          "\"any\": false",
+          "\"typed\": true"
+        ],
+        "respostaCorreta": "\"strict\": true"
+      }
+    ],
+    "medio": [
+      {
+        "id": 1,
+        "titulo": "Interface vs Type",
+        "enunciado": "Qual a principal diferença entre `interface` e `type`?",
+        "perguntas": [
+          "Interface suporta declaração incremental, type não",
+          "Type permite herança, interface não",
+          "Não há diferença",
+          "Interface só é para classes"
+        ],
+        "respostaCorreta": "Interface suporta declaração incremental, type não"
+      },
+      {
+        "id": 2,
+        "titulo": "Generic em interface",
+        "enunciado": "Como definir interface genérica `Box` que envolve T?",
+        "perguntas": [
+          "interface Box<T> { value: T; }",
+          "interface Box { T: value; }",
+          "type Box<T> = value: T;",
+          "interface Box = <T> { value: T }"
+        ],
+        "respostaCorreta": "interface Box<T> { value: T; }"
+      },
+      {
+        "id": 3,
+        "titulo": "Partial",
+        "enunciado": "O que faz o utility type `Partial<T>`?",
+        "perguntas": [
+          "Torna todas as propriedades de T opcionais",
+          "Torna todas as propriedades de T readonly",
+          "Remove propriedades de T",
+          "Faz interseção de T"
+        ],
+        "respostaCorreta": "Torna todas as propriedades de T opcionais"
+      },
+      {
+        "id": 4,
+        "titulo": "Readonly",
+        "enunciado": "O utility `Readonly<T>` faz o quê?",
+        "perguntas": [
+          "Marca propriedades de T como readonly",
+          "Torna T opcional",
+          "Remove readonly",
+          "Cria cópia profunda"
+        ],
+        "respostaCorreta": "Marca propriedades de T como readonly"
+      },
+      {
+        "id": 5,
+        "titulo": "keyof",
+        "enunciado": "O operador `keyof T` retorna o quê?",
+        "perguntas": [
+          "União das chaves de T",
+          "Tipo das chaves de T",
+          "Valores de T",
+          "Nenhuma"
+        ],
+        "respostaCorreta": "União das chaves de T"
+      },
+      {
+        "id": 6,
+        "titulo": "Mapped type",
+        "enunciado": "Qual sintaxe básica de mapped type?",
+        "perguntas": [
+          "{ [K in Keys]: T[K] }",
+          "{ Keys: T }",
+          "{ T[K] as K }",
+          "{ K: Keys }"
+        ],
+        "respostaCorreta": "{ [K in Keys]: T[K] }"
+      },
+      {
+        "id": 7,
+        "titulo": "Conditional type",
+        "enunciado": "Como é a sintaxe de tipo condicional?",
+        "perguntas": [
+          "T extends U ? X : Y",
+          "if T then X else Y",
+          "T ? X : Y",
+          "cond<T, U, X, Y>"
+        ],
+        "respostaCorreta": "T extends U ? X : Y"
+      },
+      {
+        "id": 8,
+        "titulo": "Inferência em conditional",
+        "enunciado": "O que faz `infer` em tipos condicionais?",
+        "perguntas": [
+          "Extrai um tipo interno para variável",
+          "Cria inferência automática",
+          "Remove null",
+          "Converte string"
+        ],
+        "respostaCorreta": "Extrai um tipo interno para variável"
+      },
+      {
+        "id": 9,
+        "titulo": "Intersection",
+        "enunciado": "O que faz o operador `&` em tipos?",
+        "perguntas": [
+          "Combina duas interfaces em uma só",
+          "Cria união",
+          "Define função",
+          "Remove propriedades"
+        ],
+        "respostaCorreta": "Combina duas interfaces em uma só"
+      },
+      {
+        "id": 10,
+        "titulo": "Import type",
+        "enunciado": "Como importar apenas o tipo `Foo` de um módulo?",
+        "perguntas": [
+          "import type { Foo } from './mod';",
+          "import { Foo } from './mod';",
+          "import Foo from './mod';",
+          "require('Foo');"
+        ],
+        "respostaCorreta": "import type { Foo } from './mod';"
+      },
+      {
+        "id": 11,
+        "titulo": "Omit",
+        "enunciado": "O utility type `Omit<T, K>` faz o quê?",
+        "perguntas": [
+          "Remove as propriedades K de T",
+          "Adiciona K em T",
+          "Torna K opcional",
+          "Faz interseção"
+        ],
+        "respostaCorreta": "Remove as propriedades K de T"
+      },
+      {
+        "id": 12,
+        "titulo": "Non-nullable",
+        "enunciado": "O utility `NonNullable<T>` faz o quê?",
+        "perguntas": [
+          "Remove null e undefined de T",
+          "Adiciona null",
+          "Marca propriedades como obrigatórias",
+          "Faz deep readonly"
+        ],
+        "respostaCorreta": "Remove null e undefined de T"
+      },
+      {
+        "id": 13,
+        "titulo": "Enum heterogêneo",
+        "enunciado": "Enums heterogêneos permitem quê?",
+        "perguntas": [
+          "Misturar números e strings",
+          "Usar booleanos",
+          "Gerar erros de runtime",
+          "Só usar strings"
+        ],
+        "respostaCorreta": "Misturar números e strings"
+      },
+      {
+        "id": 14,
+        "titulo": "Declaration merging",
+        "enunciado": "O que é declaration merging em TS?",
+        "perguntas": [
+          "Mesclar múltiplas declarações com mesmo nome",
+          "Unir tipos diferentes",
+          "Importar módulos",
+          "Mesclar classes"
+        ],
+        "respostaCorreta": "Mesclar múltiplas declarações com mesmo nome"
+      },
+      {
+        "id": 15,
+        "titulo": "Abstract class",
+        "enunciado": "Qual palavra-chave define uma classe abstrata?",
+        "perguntas": [
+          "abstract",
+          "interface",
+          "type",
+          "virtual"
+        ],
+        "respostaCorreta": "abstract"
+      },
+      {
+        "id": 16,
+        "titulo": "Função sobrecarregada",
+        "enunciado": "Como declarar overload em TS?",
+        "perguntas": [
+          "function fn(x: number): number; function fn(x: string): string;",
+          "function fn(x): x;",
+          "overload fn(x);",
+          "type fn(x) = x;"
+        ],
+        "respostaCorreta": "function fn(x: number): number; function fn(x: string): string;"
+      },
+      {
+        "id": 17,
+        "titulo": "Module augmentation",
+        "enunciado": "Para que serve module augmentation?",
+        "perguntas": [
+          "Adicionar tipos a módulos existentes",
+          "Criar novos módulos",
+          "Excluir módulos",
+          "Converter módulos"
+        ],
+        "respostaCorreta": "Adicionar tipos a módulos existentes"
+      },
+      {
+        "id": 18,
+        "titulo": "JSX em TSX",
+        "enunciado": "Qual extensão de arquivo para React com TS?",
+        "perguntas": [
+          ".tsx",
+          ".ts",
+          ".jsx",
+          ".js"
+        ],
+        "respostaCorreta": ".tsx"
+      },
+      {
+        "id": 19,
+        "titulo": "Diretiva esModuleInterop",
+        "enunciado": "O que 'esModuleInterop: true' faz em tsconfig?",
+        "perguntas": [
+          "Permite imports padrão de módulos CommonJS",
+          "Desativa ESModules",
+          "Force strict",
+          "Habilita JSX"
+        ],
+        "respostaCorreta": "Permite imports padrão de módulos CommonJS"
+      },
+      {
+        "id": 20,
+        "titulo": "StrictNullChecks",
+        "enunciado": "O que 'strictNullChecks: true' faz?",
+        "perguntas": [
+          "Tratamento estrito de null e undefined",
+          "Ignora null",
+          "Torna tudo any",
+          "Desativa generics"
+        ],
+        "respostaCorreta": "Tratamento estrito de null e undefined"
+      }
+    ],
+    "dificil": [
+      {
+        "id": 1,
+        "titulo": "Conditional types complexos",
+        "enunciado": "Qual resultado de `type A = string extends string ? number : boolean;`?",
+        "perguntas": [
+          "number",
+          "boolean",
+          "string",
+          "never"
+        ],
+        "respostaCorreta": "number"
+      },
+      {
+        "id": 2,
+        "titulo": "Infer in conditional",
+        "enunciado": "Para que serve o `infer U` em `T extends Array<infer U> ? U : T`?",
+        "perguntas": [
+          "Extrair o tipo interno do array",
+          "Declarar variável",
+          "Converter string",
+          "Ignorar tipo"
+        ],
+        "respostaCorreta": "Extrair o tipo interno do array"
+      },
+      {
+        "id": 3,
+        "titulo": "Template literal types",
+        "enunciado": "Qual saída de `type T = `Hello ${string}`;`?",
+        "perguntas": [
+          "Todos os strings que começam com 'Hello '",
+          "Erro de sintaxe",
+          "Literal 'Hello ${string}'",
+          "Union de strings"
+        ],
+        "respostaCorreta": "Todos os strings que começam com 'Hello '"
+      },
+      {
+        "id": 4,
+        "titulo": "Mapped types avançados",
+        "enunciado": "O que `{ [K in keyof T as Exclude<K, 'id'>]: T[K] }` faz?",
+        "perguntas": [
+          "Remove a chave 'id' de T",
+          "Adiciona a chave 'id'",
+          "Torna todas as props opcionais",
+          "Cria union de keys"
+        ],
+        "respostaCorreta": "Remove a chave 'id' de T"
+      },
+      {
+        "id": 5,
+        "titulo": "Recursive types",
+        "enunciado": "Como você declara um tipo recursivo para árvore?",
+        "perguntas": [
+          "type Tree<T> = { value: T; children?: Tree<T>[] }",
+          "type Tree = any",
+          "interface Tree { Tree }",
+          "type Tree<T> = T"
+        ],
+        "respostaCorreta": "type Tree<T> = { value: T; children?: Tree<T>[] }"
+      },
+      {
+        "id": 6,
+        "titulo": "Variadic tuple types",
+        "enunciado": "O que `[...T, U]` faz em tuplas genéricas?",
+        "perguntas": [
+          "Concatena U ao final",
+          "Substitui T",
+          "Cria union",
+          "Erro"
+        ],
+        "respostaCorreta": "Concatena U ao final"
+      },
+      {
+        "id": 7,
+        "titulo": "Key remapping",
+        "enunciado": "Qual recurso permite `as NewKey` dentro de mapped types?",
+        "perguntas": [
+          "Remap de chave em TS >=4.1",
+          "Nunca houve",
+          "É interface only",
+          "É syntax sugar do JS"
+        ],
+        "respostaCorreta": "Remap de chave em TS >=4.1"
+      },
+      {
+        "id": 8,
+        "titulo": "Nominal typing",
+        "enunciado": "Como simular nominal typing em TS?",
+        "perguntas": [
+          "Branding com intersection",
+          "Não é possível",
+          "Using enum",
+          "Using any"
+        ],
+        "respostaCorreta": "Branding com intersection"
+      },
+      {
+        "id": 9,
+        "titulo": "Discriminated unions",
+        "enunciado": "Qual propriedade é necessária em discriminated unions?",
+        "perguntas": [
+          "Uma literal comum (tag)",
+          "Generic",
+          "Enum only",
+          "Function"
+        ],
+        "respostaCorreta": "Uma literal comum (tag)"
+      },
+      {
+        "id": 10,
+        "titulo": "Conditional recursion",
+        "enunciado": "O que faz `Flatten<T>` recursivo em arrays?",
+        "perguntas": [
+          "Achata arrays arbitrariamente aninhados",
+          "Retorna T",
+          "Remove all elements",
+          "Gera union"
+        ],
+        "respostaCorreta": "Achata arrays arbitrariamente aninhados"
+      },
+      {
+        "id": 11,
+        "titulo": "EventEmitter tipado",
+        "enunciado": "Como tipar um EventEmitter genérico?",
+        "perguntas": [
+          "type E<Ev> = { emit<K extends keyof Ev>(event: K, payload: Ev[K]): void }",
+          "type E = any",
+          "class E extends any",
+          "interface E {}"
+        ],
+        "respostaCorreta": "type E<Ev> = { emit<K extends keyof Ev>(event: K, payload: Ev[K]): void }"
+      },
+      {
+        "id": 12,
+        "titulo": "Conditional inferência",
+        "enunciado": "O que `Extract<T, U>` faz?",
+        "perguntas": [
+          "Retorna union de tipos de T que estendem U",
+          "Remove U de T",
+          "Faz interseção",
+          "Cria U"
+        ],
+        "respostaCorreta": "Retorna union de tipos de T que estendem U"
+      },
+      {
+        "id": 13,
+        "titulo": "Mapped modifiers",
+        "enunciado": "O que `{ -readonly [K in keyof T]: T[K] }` faz?",
+        "perguntas": [
+          "Remove readonly de todas as props",
+          "Adiciona readonly",
+          "Torna opcionais",
+          "Nada"
+        ],
+        "respostaCorreta": "Remove readonly de todas as props"
+      },
+      {
+        "id": 14,
+        "titulo": "Import types avançado",
+        "enunciado": "Para que serve `import('./mod').Foo`?",
+        "perguntas": [
+          "Referenciar tipo de módulo dinamicamente",
+          "Importar módulo",
+          "Carregar JS",
+          "Declarar namespace"
+        ],
+        "respostaCorreta": "Referenciar tipo de módulo dinamicamente"
+      },
+      {
+        "id": 15,
+        "titulo": "JSX IntrinsicElements",
+        "enunciado": "O que `JSX.IntrinsicElements` tipa?",
+        "perguntas": [
+          "Tags HTML em TSX",
+          "Componentes React",
+          "Classes",
+          "Enums"
+        ],
+        "respostaCorreta": "Tags HTML em TSX"
+      },
+      {
+        "id": 16,
+        "titulo": "Awaited",
+        "enunciado": "O utility type `Awaited<T>` faz o quê?",
+        "perguntas": [
+          "Resolve o tipo de retorno de uma Promise",
+          "Espera um segundo",
+          "Remove async",
+          "Retorna never"
+        ],
+        "respostaCorreta": "Resolve o tipo de retorno de uma Promise"
+      },
+      {
+        "id": 17,
+        "titulo": "Decorator factory",
+        "enunciado": "O que diferencia um decorator de uma decorator factory?",
+        "perguntas": [
+          "Factory retorna função decorator",
+          "Não há diferença",
+          "Factory é experimental",
+          "Decorator é assíncrono"
+        ],
+        "respostaCorreta": "Factory retorna função decorator"
+      },
+      {
+        "id": 18,
+        "titulo": "Symbol.hasInstance",
+        "enunciado": "Para que serve `Symbol.hasInstance` em classes?",
+        "perguntas": [
+          "Customizar instanceof",
+          "Criar símbolo global",
+          "Interromper herança",
+          "Converter string"
+        ],
+        "respostaCorreta": "Customizar instanceof"
+      },
+      {
+        "id": 19,
+        "titulo": "Import assertions",
+        "enunciado": "Qual sintaxe para importar JSON com assert?",
+        "perguntas": [
+          "import data from './file.json' assert { type: 'json' };",
+          "import data from './file.json';",
+          "require('./file.json');",
+          "fetch('./file.json');"
+        ],
+        "respostaCorreta": "import data from './file.json' assert { type: 'json' };"
+      },
+      {
+        "id": 20,
+        "titulo": "Tipo `never`",
+        "enunciado": "Quando uma função retorna `never`?",
+        "perguntas": [
+          "Quando lança exceção ou entra em loop infinito",
+          "Quando retorna undefined",
+          "Quando retorna null",
+          "Quando retorna void"
+        ],
+        "respostaCorreta": "Quando lança exceção ou entra em loop infinito"
+      }
+    ]
+  }

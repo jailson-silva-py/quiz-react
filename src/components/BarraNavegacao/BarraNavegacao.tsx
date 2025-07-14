@@ -1,9 +1,10 @@
 import classes from './BarraNavegacao.module.css'
-import { HiHome, HiMenu } from 'react-icons/hi'
+import { HiOutlineHome, HiOutlineMenu, HiOutlineQuestionMarkCircle, HiOutlineMail } from 'react-icons/hi'
 import { NavLink } from 'react-router-dom'
 import { useMemo, useRef, useState } from 'react'
 import useViewportSmallerThan from '../../hooks/useViewportSmallerThan'
 import useOutClickElement from '../../hooks/useOutClickElement'
+import { motion, AnimatePresence } from 'framer-motion'
  
 const BarraNavegacao = () => {
 
@@ -30,18 +31,31 @@ const BarraNavegacao = () => {
         <nav className={classes.menuContainer} ref={menuRef}>
             {quebraViewport && <button className={classes.menuSuspensoBtn} onClick={abrirMenu}>
 
-                <HiMenu className={classes.menuSuspensoIcon}/>
+                <HiOutlineMenu className={classes.menuSuspensoIcon}/>
 
             </button>}
-           
-            <ul className={classesMenuLista}>
+            <AnimatePresence>
+            {(mostrarMenuSuspenso || !quebraViewport) && (<motion.ul className={classesMenuLista} 
+            key="menu"
+            exit={{translateX:"-100%"}}
+            initial={{scaleX:0, translateX:"-40%"}} animate={{scaleX:1, translateX:"0"}}
+            transition={{duration:.4}}>
 
                 <li className={classes.menuListaItem}>
-                    <HiHome size={32} className={classes.homeIcon}/>
+                    <HiOutlineHome size={32} className={classes.icon}/>
                     <NavLink to="/" className={classes.link}>Home</NavLink>
                 </li>
+                <li className={classes.menuListaItem}>
+                    <HiOutlineQuestionMarkCircle size={32} className={classes.icon}/>
+                    <NavLink to="/sobre" className={classes.link}>Sobre</NavLink>
+                </li>
+                <li className={classes.menuListaItem}>
+                    <HiOutlineMail size={32} className={classes.icon}/>
+                    <NavLink to="/contato" className={classes.link}>Contato</NavLink>
+                </li>
 
-            </ul>
+            </motion.ul>)}
+            </AnimatePresence>
 
         </nav>
     )

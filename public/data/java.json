@@ -1,0 +1,728 @@
+{
+  "facil": [
+    {
+      "id": 1,
+      "titulo": "Metodo principal",
+      "enunciado": "Qual metodo inicia a execucao de um programa Java?",
+      "perguntas": [
+        "public static void main(String[] args)",
+        "public void start(String[] args)",
+        "public static void run(String[] args)",
+        "public init(String[] args)"
+      ],
+      "respostaCorreta": "public static void main(String[] args)"
+    },
+    {
+      "id": 2,
+      "titulo": "Declaracao de variavel",
+      "enunciado": "Como declarar uma variavel inteira em Java?",
+      "perguntas": [
+        "int x = 5;",
+        "var x = 5;",
+        "Integer x = 5;",
+        "x:int = 5;"
+      ],
+      "respostaCorreta": "int x = 5;"
+    },
+    {
+      "id": 3,
+      "titulo": "Impressao no console",
+      "enunciado": "Qual comando imprime texto no console?",
+      "perguntas": [
+        "System.out.println(\"texto\");",
+        "console.log(\"texto\");",
+        "printf(\"texto\");",
+        "print(\"texto\");"
+      ],
+      "respostaCorreta": "System.out.println(\"texto\");"
+    },
+    {
+      "id": 4,
+      "titulo": "Comentario de linha",
+      "enunciado": "Qual sintaxe para comentario de uma linha?",
+      "perguntas": [
+        "// comentario",
+        "/* comentario */",
+        "<!-- comentario -->",
+        "# comentario"
+      ],
+      "respostaCorreta": "// comentario"
+    },
+    {
+      "id": 5,
+      "titulo": "Tipo booleano",
+      "enunciado": "Qual tipo armazena verdadeiro ou falso?",
+      "perguntas": [
+        "boolean",
+        "Boolean",
+        "bool",
+        "bit"
+      ],
+      "respostaCorreta": "boolean"
+    },
+    {
+      "id": 6,
+      "titulo": "Classe String",
+      "enunciado": "Qual classe representa texto em Java?",
+      "perguntas": [
+        "String",
+        "Text",
+        "CharSequence",
+        "str"
+      ],
+      "respostaCorreta": "String"
+    },
+    {
+      "id": 7,
+      "titulo": "Comparacao de Strings",
+      "enunciado": "Qual metodo compara o conteudo de duas Strings?",
+      "perguntas": [
+        "equals()",
+        "==",
+        "compare()",
+        "match()"
+      ],
+      "respostaCorreta": "equals()"
+    },
+    {
+      "id": 8,
+      "titulo": "If basico",
+      "enunciado": "Qual palavra-chave inicia uma condicional?",
+      "perguntas": [
+        "if",
+        "when",
+        "switch",
+        "case"
+      ],
+      "respostaCorreta": "if"
+    },
+    {
+      "id": 9,
+      "titulo": "Switch basico",
+      "enunciado": "Qual sintaxe basica de um switch?",
+      "perguntas": [
+        "switch(valor) { case 1: break; }",
+        "switch { valor: 1 }",
+        "case(valor) {}",
+        "select(valor) {}"
+      ],
+      "respostaCorreta": "switch(valor) { case 1: break; }"
+    },
+    {
+      "id": 10,
+      "titulo": "Loop for tradicional",
+      "enunciado": "Como escrever um loop for que conta de 0 a 9?",
+      "perguntas": [
+        "for(int i = 0; i < 10; i++) {}",
+        "for i in 0..9 {}",
+        "foreach(int i: 0 to 9) {}",
+        "while(i < 10) {}"
+      ],
+      "respostaCorreta": "for(int i = 0; i < 10; i++) {}"
+    },
+    {
+      "id": 11,
+      "titulo": "Loop foreach",
+      "enunciado": "Como iterar uma lista com for-each?",
+      "perguntas": [
+        "for(Type item : list) {}",
+        "for(item in list) {}",
+        "list.forEach(item -> {})",
+        "foreach item : list {}"
+      ],
+      "respostaCorreta": "for(Type item : list) {}"
+    },
+    {
+      "id": 12,
+      "titulo": "Declaracao de array",
+      "enunciado": "Como declarar um array de inteiros com 5 posicoes?",
+      "perguntas": [
+        "int[] arr = new int[5];",
+        "int arr[] = {5};",
+        "Array<int> arr = new Array(5);",
+        "int arr = new int[5];"
+      ],
+      "respostaCorreta": "int[] arr = new int[5];"
+    },
+    {
+      "id": 13,
+      "titulo": "Metodo estatico",
+      "enunciado": "Qual palavra-chave define metodo estatico?",
+      "perguntas": [
+        "static",
+        "public",
+        "final",
+        "void"
+      ],
+      "respostaCorreta": "static"
+    },
+    {
+      "id": 14,
+      "titulo": "Construtor",
+      "enunciado": "Como se identifica um construtor em uma classe?",
+      "perguntas": [
+        "Mesmo nome da classe sem tipo de retorno",
+        "Metodo chamado init()",
+        "Metodo chamado constructor()",
+        "Metodo com @Constructor"
+      ],
+      "respostaCorreta": "Mesmo nome da classe sem tipo de retorno"
+    },
+    {
+      "id": 15,
+      "titulo": "Classe publica",
+      "enunciado": "Qual sintaxe para declarar classe publica?",
+      "perguntas": [
+        "public class Nome {}",
+        "class public Nome {}",
+        "public Nome class {}",
+        "class Nome(public) {}"
+      ],
+      "respostaCorreta": "public class Nome {}"
+    },
+    {
+      "id": 16,
+      "titulo": "Importacao de pacote",
+      "enunciado": "Como importar a classe List do util?",
+      "perguntas": [
+        "import java.util.List;",
+        "using java.util.List;",
+        "include java.util.List;",
+        "require java.util.List;"
+      ],
+      "respostaCorreta": "import java.util.List;"
+    },
+    {
+      "id": 17,
+      "titulo": "Declaracao de pacote",
+      "enunciado": "Como declarar o pacote de um arquivo?",
+      "perguntas": [
+        "package com.exemplo;",
+        "namespace com.exemplo;",
+        "module com.exemplo;",
+        "import com.exemplo;"
+      ],
+      "respostaCorreta": "package com.exemplo;"
+    },
+    {
+      "id": 18,
+      "titulo": "Wrapper de int",
+      "enunciado": "Qual classe encapsula o tipo primitivo int?",
+      "perguntas": [
+        "Integer",
+        "Int",
+        "Number",
+        "IntWrapper"
+      ],
+      "respostaCorreta": "Integer"
+    },
+    {
+      "id": 19,
+      "titulo": "Operador ternario",
+      "enunciado": "Qual sintaxe do operador ternario em Java?",
+      "perguntas": [
+        "condicao ? valor1 : valor2",
+        "if(condicao) valor1 else valor2",
+        "condicao : valor1 ? valor2",
+        "condicao ? valor1, valor2"
+      ],
+      "respostaCorreta": "condicao ? valor1 : valor2"
+    },
+    {
+      "id": 20,
+      "titulo": "Operador instanceof",
+      "enunciado": "Qual operador verifica se um objeto e instancia de uma classe?",
+      "perguntas": [
+        "instanceof",
+        "typeof",
+        "is",
+        "in"
+      ],
+      "respostaCorreta": "instanceof"
+    }
+  ],
+  "medio": [
+    {
+      "id": 1,
+      "titulo": "Checked exception",
+      "enunciado": "Qual dessas e uma checked exception?",
+      "perguntas": [
+        "IOException",
+        "RuntimeException",
+        "NullPointerException",
+        "Error"
+      ],
+      "respostaCorreta": "IOException"
+    },
+    {
+      "id": 2,
+      "titulo": "Try-catch basico",
+      "enunciado": "Como escrever bloco try-catch?",
+      "perguntas": [
+        "try { } catch(Exception e) { }",
+        "catch { } try { }",
+        "try { } except(Exception e) { }",
+        "try-catch { }"
+      ],
+      "respostaCorreta": "try { } catch(Exception e) { }"
+    },
+    {
+      "id": 3,
+      "titulo": "Finally",
+      "enunciado": "Qual bloco sempre e executado apos try/catch?",
+      "perguntas": [
+        "finally",
+        "cleanup",
+        "end",
+        "final"
+      ],
+      "respostaCorreta": "finally"
+    },
+    {
+      "id": 4,
+      "titulo": "Generics basico",
+      "enunciado": "Como voce declara lista de Strings usando generics?",
+      "perguntas": [
+        "List<String>",
+        "List<string>",
+        "List<>",
+        "new List<String>()"
+      ],
+      "respostaCorreta": "List<String>"
+    },
+    {
+      "id": 5,
+      "titulo": "List vs ArrayList",
+      "enunciado": "Qual a diferenca entre List e ArrayList?",
+      "perguntas": [
+        "List e interface, ArrayList e implementacao",
+        "List e classe, ArrayList e interface",
+        "Nenhuma diferenca",
+        "ArrayList nao suporta List"
+      ],
+      "respostaCorreta": "List e interface, ArrayList e implementacao"
+    },
+    {
+      "id": 6,
+      "titulo": "Map basico",
+      "enunciado": "Como declarar um Map de String para Integer?",
+      "perguntas": [
+        "Map<String,Integer>",
+        "Map<,>",
+        "new Map<String,Integer>()",
+        "Map<String>"
+      ],
+      "respostaCorreta": "Map<String,Integer>"
+    },
+    {
+      "id": 7,
+      "titulo": "Iterator",
+      "enunciado": "Como voce obtém um iterador de uma colecao?",
+      "perguntas": [
+        "collection.iterator()",
+        "collection.iter()",
+        "collection.getIterator()",
+        "collection.forEach()"
+      ],
+      "respostaCorreta": "collection.iterator()"
+    },
+    {
+      "id": 8,
+      "titulo": "Stream API basica",
+      "enunciado": "Como criar um stream a partir de uma lista?",
+      "perguntas": [
+        "list.stream()",
+        "new Stream(list)",
+        "Stream.of(list)",
+        "list.toStream()"
+      ],
+      "respostaCorreta": "list.stream()"
+    },
+    {
+      "id": 9,
+      "titulo": "Lambda basico",
+      "enunciado": "Qual sintaxe de lambda que recebe x e retorna x * 2?",
+      "perguntas": [
+        "x -> x * 2",
+        "(x) -> { return x * 2; }",
+        "lambda(x) { x * 2 }",
+        "-> x * 2"
+      ],
+      "respostaCorreta": "x -> x * 2"
+    },
+    {
+      "id": 10,
+      "titulo": "Method reference",
+      "enunciado": "Como referenciar o metodo println de System.out?",
+      "perguntas": [
+        "System.out::println",
+        "System::out.println",
+        "out.println()",
+        "System::println"
+      ],
+      "respostaCorreta": "System.out::println"
+    },
+    {
+      "id": 11,
+      "titulo": "Thread basico",
+      "enunciado": "Como voce cria uma nova Thread?",
+      "perguntas": [
+        "new Thread(runnable).start()",
+        "new Thread().run()",
+        "Thread.startNew()",
+        "Thread.create()"
+      ],
+      "respostaCorreta": "new Thread(runnable).start()"
+    },
+    {
+      "id": 12,
+      "titulo": "Runnable",
+      "enunciado": "Qual interface funcional representa codigo executavel em thread?",
+      "perguntas": [
+        "Runnable",
+        "Callable",
+        "Threadable",
+        "Executable"
+      ],
+      "respostaCorreta": "Runnable"
+    },
+    {
+      "id": 13,
+      "titulo": "Synchronized",
+      "enunciado": "Qual palavra-chave usa lock intrinseco em metodos ou blocos?",
+      "perguntas": [
+        "synchronized",
+        "lock",
+        "mutex",
+        "atomic"
+      ],
+      "respostaCorreta": "synchronized"
+    },
+    {
+      "id": 14,
+      "titulo": "Serializable",
+      "enunciado": "Para que serve a interface Serializable?",
+      "perguntas": [
+        "Permitir serializacao de objetos",
+        "Criar novos objetos",
+        "Converter objeto em JSON",
+        "Impedir garbage collection"
+      ],
+      "respostaCorreta": "Permitir serializacao de objetos"
+    },
+    {
+      "id": 15,
+      "titulo": "Anotacao Override",
+      "enunciado": "Qual anotacao indica sobreposicao de metodo?",
+      "perguntas": [
+        "@Override",
+        "@Overload",
+        "@Deprecated",
+        "@SuppressWarnings"
+      ],
+      "respostaCorreta": "@Override"
+    },
+    {
+      "id": 16,
+      "titulo": "Enum basico",
+      "enunciado": "Como voce declara um enum Dia com SEG e TER?",
+      "perguntas": [
+        "enum Dia { SEG, TER }",
+        "Enum Dia = [SEG, TER]",
+        "enum Dia: SEG, TER",
+        "type Dia = SEG | TER"
+      ],
+      "respostaCorreta": "enum Dia { SEG, TER }"
+    },
+    {
+      "id": 17,
+      "titulo": "Varargs",
+      "enunciado": "Qual sintaxe para parametro variatico em metodo?",
+      "perguntas": [
+        "String... args",
+        "String[]... args",
+        "varargs String args",
+        "String args..."
+      ],
+      "respostaCorreta": "String... args"
+    },
+    {
+      "id": 18,
+      "titulo": "Optional basico",
+      "enunciado": "Como voce cria um Optional vazio?",
+      "perguntas": [
+        "Optional.empty()",
+        "new Optional()",
+        "Optional.ofNull()",
+        "Optional.none()"
+      ],
+      "respostaCorreta": "Optional.empty()"
+    },
+    {
+      "id": 19,
+      "titulo": "Autoboxing",
+      "enunciado": "O que e autoboxing em Java?",
+      "perguntas": [
+        "Conversao automatica de primitivo para wrapper",
+        "Converter String para int",
+        "Converter objeto para primitivo",
+        "Nada"
+      ],
+      "respostaCorreta": "Conversao automatica de primitivo para wrapper"
+    },
+    {
+      "id": 20,
+      "titulo": "Comparator basico",
+      "enunciado": "Qual interface voce implementa para comparar objetos?",
+      "perguntas": [
+        "Comparator<T>",
+        "Comparable<T>",
+        "Compare<T>",
+        "Comparer<T>"
+      ],
+      "respostaCorreta": "Comparator<T>"
+    }
+  ],
+  "dificil": [
+    {
+      "id": 1,
+      "titulo": "Stream avançados",
+      "enunciado": "Qual metodo chain voce usa para filtrar e depois mapear itens?",
+      "perguntas": [
+        "stream().filter(...).map(...)",
+        "stream().collect(...)",
+        "stream().forEach(...)",
+        "stream().reduce(...)"
+      ],
+      "respostaCorreta": "stream().filter(...).map(...)"
+    },
+    {
+      "id": 2,
+      "titulo": "ParallelStream",
+      "enunciado": "Como voce cria um parallel stream de uma lista?",
+      "perguntas": [
+        "list.parallelStream()",
+        "list.stream().parallel()",
+        "parallel(list)",
+        "Stream.parallel(list)"
+      ],
+      "respostaCorreta": "list.parallelStream()"
+    },
+    {
+      "id": 3,
+      "titulo": "CompletableFuture",
+      "enunciado": "Qual classe voce usa para operacoes assincronas e composicao de callbacks?",
+      "perguntas": [
+        "CompletableFuture",
+        "FutureTask",
+        "AsyncTask",
+        "Promise"
+      ],
+      "respostaCorreta": "CompletableFuture"
+    },
+    {
+      "id": 4,
+      "titulo": "Reflection basico",
+      "enunciado": "Como voce carrega dinamicamente classe pelo nome?",
+      "perguntas": [
+        "Class.forName(\"NomeDaClasse\")",
+        "new Class(\"NomeDaClasse\")",
+        "Class.load(\"NomeDaClasse\")",
+        "Reflect.load(\"NomeDaClasse\")"
+      ],
+      "respostaCorreta": "Class.forName(\"NomeDaClasse\")"
+    },
+    {
+      "id": 5,
+      "titulo": "Anotacoes personalizadas",
+      "enunciado": "Qual target vc usa para anotar metodos?",
+      "perguntas": [
+        "@Target(ElementType.METHOD)",
+        "@Target(ElementType.FIELD)",
+        "@Target(ElementType.TYPE)",
+        "@Target(ElementType.PARAMETER)"
+      ],
+      "respostaCorreta": "@Target(ElementType.METHOD)"
+    },
+    {
+      "id": 6,
+      "titulo": "Generics avançados",
+      "enunciado": "O que significa <? extends T> em um generic?",
+      "perguntas": [
+        "Aceita subclasses de T",
+        "Aceita superclasses de T",
+        "Nao aceita T",
+        "É codigo invalido"
+      ],
+      "respostaCorreta": "Aceita subclasses de T"
+    },
+    {
+      "id": 7,
+      "titulo": "Type erasure",
+      "enunciado": "O que acontece com generics em tempo de execucao?",
+      "perguntas": [
+        "Tipos genericos sao removidos (type erasure)",
+        "Mantem informacao completa de tipo",
+        "Converte para Object[]",
+        "Gera erro"
+      ],
+      "respostaCorreta": "Tipos genericos sao removidos (type erasure)"
+    },
+    {
+      "id": 8,
+      "titulo": "ClassLoader",
+      "enunciado": "Qual metodo retorna o class loader da classe atual?",
+      "perguntas": [
+        "getClass().getClassLoader()",
+        "ClassLoader.load()",
+        "getClassLoader()",
+        "loadClass()"
+      ],
+      "respostaCorreta": "getClass().getClassLoader()"
+    },
+    {
+      "id": 9,
+      "titulo": "Volatile",
+      "enunciado": "O que a palavra-chave volatile garante?",
+      "perguntas": [
+        "Visibilidade imediata entre threads",
+        "Exclusao mutua",
+        "Atomicidade",
+        "Sincronizacao implicita"
+      ],
+      "respostaCorreta": "Visibilidade imediata entre threads"
+    },
+    {
+      "id": 10,
+      "titulo": "Wait e notify",
+      "enunciado": "Em qual objeto voce chama wait() e notify()?",
+      "perguntas": [
+        "No proprio objeto de lock",
+        "Em Thread",
+        "Em Runnable",
+        "Em System"
+      ],
+      "respostaCorreta": "No proprio objeto de lock"
+    },
+    {
+      "id": 11,
+      "titulo": "Deadlock",
+      "enunciado": "O que causa um deadlock?",
+      "perguntas": [
+        "Threads esperando locks umas das outras",
+        "Excesso de memoria",
+        "Erro no GC",
+        "Falta de sincronizacao"
+      ],
+      "respostaCorreta": "Threads esperando locks umas das outras"
+    },
+    {
+      "id": 12,
+      "titulo": "NIO Channels",
+      "enunciado": "Qual pacote define channels para IO async?",
+      "perguntas": [
+        "java.nio.channels",
+        "java.io.channels",
+        "java.async.channels",
+        "java.nio.async"
+      ],
+      "respostaCorreta": "java.nio.channels"
+    },
+    {
+      "id": 13,
+      "titulo": "ByteBuffer",
+      "enunciado": "Para que serve ByteBuffer em NIO?",
+      "perguntas": [
+        "Ler e escrever dados binarios",
+        "Manipular Strings",
+        "Armazenar objetos",
+        "Gerenciar threads"
+      ],
+      "respostaCorreta": "Ler e escrever dados binarios"
+    },
+    {
+      "id": 14,
+      "titulo": "Modulos Java",
+      "enunciado": "Qual arquivo define modulos em Java 9+?",
+      "perguntas": [
+        "module-info.java",
+        "module.xml",
+        "module.json",
+        "module.properties"
+      ],
+      "respostaCorreta": "module-info.java"
+    },
+    {
+      "id": 15,
+      "titulo": "Tuning de GC",
+      "enunciado": "Qual flag JVM voce usa para escolher coletor G1?",
+      "perguntas": [
+        "-XX:+UseG1GC",
+        "-XX:+UseSerialGC",
+        "-XX:+UseParallelGC",
+        "-XX:+UseConcMarkSweepGC"
+      ],
+      "respostaCorreta": "-XX:+UseG1GC"
+    },
+    {
+      "id": 16,
+      "titulo": "JNI basico",
+      "enunciado": "Para que serve JNI?",
+      "perguntas": [
+        "Chamar codigo nativo C/C++",
+        "Fazer reflection",
+        "Manipular bytecode",
+        "Gerenciar threads"
+      ],
+      "respostaCorreta": "Chamar codigo nativo C/C++"
+    },
+    {
+      "id": 17,
+      "titulo": "ForkJoinPool",
+      "enunciado": "Qual classe voce usa para computacao dividida e paralela?",
+      "perguntas": [
+        "ForkJoinPool",
+        "ThreadPoolExecutor",
+        "ExecutorService",
+        "CompletableFuture"
+      ],
+      "respostaCorreta": "ForkJoinPool"
+    },
+    {
+      "id": 18,
+      "titulo": "Memory Leak em Java",
+      "enunciado": "O que pode causar vazamento de memoria?",
+      "perguntas": [
+        "Manter referencias em colecoes estaticas",
+        "Nao fechar streams",
+        "Excesso de threads",
+        "Uso de finalize()"
+      ],
+      "respostaCorreta": "Manter referencias em colecoes estaticas"
+    },
+    {
+      "id": 19,
+      "titulo": "Metaspace",
+      "enunciado": "Qual area JVM substituiu o PermGen em Java 8?",
+      "perguntas": [
+        "Metaspace",
+        "CodeCache",
+        "Heap",
+        "Stack"
+      ],
+      "respostaCorreta": "Metaspace"
+    },
+    {
+      "id": 20,
+      "titulo": "Modelo de memoria Java",
+      "enunciado": "O que o Java Memory Model define?",
+      "perguntas": [
+        "Regras de visibilidade e ordenacao entre threads",
+        "Gerenciamento de heap",
+        "Alocacao de arrays",
+        "Tamanho do stack"
+      ],
+      "respostaCorreta": "Regras de visibilidade e ordenacao entre threads"
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "facil": [
+    {
+      "id": 1,
+      "titulo": "Declaracao de variavel",
+      "enunciado": "Como voce declara uma variavel em Python?",
+      "perguntas": ["x = 5", "int x = 5", "var x = 5", "let x = 5"],
+      "respostaCorreta": "x = 5"
+    },
+    {
+      "id": 2,
+      "titulo": "Comentario de linha",
+      "enunciado": "Como escrever comentario de linha em Python?",
+      "perguntas": ["# comentario", "// comentario", "/* comentario */", "<!-- comentario -->"],
+      "respostaCorreta": "# comentario"
+    },
+    {
+      "id": 3,
+      "titulo": "Print basico",
+      "enunciado": "Como imprimir 'Hello' no console?",
+      "perguntas": ["print('Hello')", "echo 'Hello'", "console.log('Hello')", "printf('Hello')"],
+      "respostaCorreta": "print('Hello')"
+    },
+    {
+      "id": 4,
+      "titulo": "Tipo booleano",
+      "enunciado": "Qual o tipo de dado de True?",
+      "perguntas": ["bool", "int", "str", "NoneType"],
+      "respostaCorreta": "bool"
+    },
+    {
+      "id": 5,
+      "titulo": "Slicing basico",
+      "enunciado": "Como pegar os tres primeiros elementos de lista?",
+      "perguntas": ["lista[:3]", "lista[3:]", "lista[0:]", "lista[1:4]"],
+      "respostaCorreta": "lista[:3]"
+    },
+    {
+      "id": 6,
+      "titulo": "Funcao len",
+      "enunciado": "Qual funcao retorna o tamanho de um objeto?",
+      "perguntas": ["len()", "size()", "count()", "length()"],
+      "respostaCorreta": "len()"
+    },
+    {
+      "id": 7,
+      "titulo": "Lista vazia",
+      "enunciado": "Como criar uma lista vazia?",
+      "perguntas": ["[]", "{}", "()", "<>"],
+      "respostaCorreta": "[]"
+    },
+    {
+      "id": 8,
+      "titulo": "Tupla com um elemento",
+      "enunciado": "Qual sintaxe de tupla com um elemento?",
+      "perguntas": ["(x,)", "[x]", "{x}", "(x)"],
+      "respostaCorreta": "(x,)"
+    },
+    {
+      "id": 9,
+      "titulo": "Dicionario vazio",
+      "enunciado": "Como criar um dicionario vazio?",
+      "perguntas": ["{}", "[]", "()", "dict()"],
+      "respostaCorreta": "{}"
+    },
+    {
+      "id": 10,
+      "titulo": "Input basico",
+      "enunciado": "Como ler input do usuario?",
+      "perguntas": ["input()", "raw_input()", "scanf()", "cin>>"],
+      "respostaCorreta": "input()"
+    },
+    {
+      "id": 11,
+      "titulo": "If basico",
+      "enunciado": "Qual sintaxe de condicional em Python?",
+      "perguntas": ["if cond:", "if(cond) {}", "if cond {}", "if cond then"],
+      "respostaCorreta": "if cond:"
+    },
+    {
+      "id": 12,
+      "titulo": "Loop for",
+      "enunciado": "Como iterar cada elemento de lista?",
+      "perguntas": ["for x in lista:", "foreach x in lista:", "for lista in x:", "for x lista:"],
+      "respostaCorreta": "for x in lista:"
+    },
+    {
+      "id": 13,
+      "titulo": "Loop while",
+      "enunciado": "Como escrever loop while que roda enquanto x<5?",
+      "perguntas": ["while x<5:", "while(x<5)", "while x<5 {}", "loop while x<5"],
+      "respostaCorreta": "while x<5:"
+    },
+    {
+      "id": 14,
+      "titulo": "Range basico",
+      "enunciado": "O que range(5) gera?",
+      "perguntas": ["0,1,2,3,4", "1,2,3,4,5", "0,1,2,3,4,5", "5"],
+      "respostaCorreta": "0,1,2,3,4"
+    },
+    {
+      "id": 15,
+      "titulo": "Definicao de funcao",
+      "enunciado": "Como definir funcao foo sem parametros?",
+      "perguntas": ["def foo():", "function foo()", "fun foo():", "def foo;"],
+      "respostaCorreta": "def foo():"
+    },
+    {
+      "id": 16,
+      "titulo": "Import basico",
+      "enunciado": "Como importar modulo math?",
+      "perguntas": ["import math", "include math", "require('math')", "#import math"],
+      "respostaCorreta": "import math"
+    },
+    {
+      "id": 17,
+      "titulo": "Concatenacao de listas",
+      "enunciado": "Como juntar duas listas l1 e l2?",
+      "perguntas": ["l1 + l2", "l1.concat(l2)", "extend(l1,l2)", "join(l1,l2)"],
+      "respostaCorreta": "l1 + l2"
+    },
+    {
+      "id": 18,
+      "titulo": "Fstring basica",
+      "enunciado": "Como formatar string com f-string?",
+      "perguntas": ["f'{x}'", "format(x)", "%s", "str(x)"],
+      "respostaCorreta": "f'{x}'"
+    },
+    {
+      "id": 19,
+      "titulo": "Valor None",
+      "enunciado": "Qual valor representa ausencia de valor em Python?",
+      "perguntas": ["None", "null", "undefined", "0"],
+      "respostaCorreta": "None"
+    },
+    {
+      "id": 20,
+      "titulo": "Indentacao",
+      "enunciado": "O que indica blocos de codigo?",
+      "perguntas": ["Indentacao", "Ponto e virgula", "Chaves", "Tab espacamento"],
+      "respostaCorreta": "Indentacao"
+    }
+  ],
+  "medio": [
+    {
+      "id": 1,
+      "titulo": "List comprehension",
+      "enunciado": "Qual sintaxe de list comprehension para dobrar cada elemento em lista?",
+      "perguntas": ["[x*2 for x in lista]", "lista.map(x*2)", "[for x in lista: x*2]", "[x*2 in lista]"],
+      "respostaCorreta": "[x*2 for x in lista]"
+    },
+    {
+      "id": 2,
+      "titulo": "Dict comprehension",
+      "enunciado": "Como criar dict onde valor e quadrado de x para x em range(5)?",
+      "perguntas": ["{x: x*x for x in range(5)}", "{x:x*x}", "dict(x:x*x)", "{for x in range(5): x*x}"],
+      "respostaCorreta": "{x: x*x for x in range(5)}"
+    },
+    {
+      "id": 3,
+      "titulo": "Lambda basica",
+      "enunciado": "Como definir lambda que soma a e b?",
+      "perguntas": ["lambda a,b: a+b", "def lambda(a,b):", "(a,b)->a+b", "function(a,b): a+b"],
+      "respostaCorreta": "lambda a,b: a+b"
+    },
+    {
+      "id": 4,
+      "titulo": "Decorator basico",
+      "enunciado": "Qual simbolo introduz um decorator?",
+      "perguntas": ["@", "#", "!", "$"],
+      "respostaCorreta": "@"
+    },
+    {
+      "id": 5,
+      "titulo": "Uso de map",
+      "enunciado": "O que map(func,iteravel) faz?",
+      "perguntas": ["Aplica func a cada item e retorna iterator", "Filtra itens", "Mapeia chaves", "None"],
+      "respostaCorreta": "Aplica func a cada item e retorna iterator"
+    },
+    {
+      "id": 6,
+      "titulo": "Uso de filter",
+      "enunciado": "Qual a saida de list(filter(lambda x: x%2==0, [1,2,3,4]))?",
+      "perguntas": ["[2,4]", "[1,3]", "[1,2,3,4]", "[0]"],
+      "respostaCorreta": "[2,4]"
+    },
+    {
+      "id": 7,
+      "titulo": "Generators",
+      "enunciado": "O que yield faz dentro de funcao?",
+      "perguntas": ["Transforma funcao em generator", "Retorna valor e termina", "Ignora funcao", "None"],
+      "respostaCorreta": "Transforma funcao em generator"
+    },
+    {
+      "id": 8,
+      "titulo": "Virtual environment",
+      "enunciado": "Qual comando cria ambiente virtual?",
+      "perguntas": ["python -m venv venv", "pip install venv", "venv create", "virtualenv make"],
+      "respostaCorreta": "python -m venv venv"
+    },
+    {
+      "id": 9,
+      "titulo": "Instalacao de pacote",
+      "enunciado": "Como instalar pacote requests via pip?",
+      "perguntas": ["pip install requests", "pip get requests", "install requests", "npm install requests"],
+      "respostaCorreta": "pip install requests"
+    },
+    {
+      "id": 10,
+      "titulo": "Try except",
+      "enunciado": "Como capturar excecao generica?",
+      "perguntas": ["try: ... except Exception as e:", "try: ... catch Exception:", "try: ... except():", "try: ... except ValueError"],
+      "respostaCorreta": "try: ... except Exception as e:"
+    },
+    {
+      "id": 11,
+      "titulo": "File I O",
+      "enunciado": "Como abrir arquivo texto para escrita?",
+      "perguntas": ["open('file.txt','w')", "fopen('file.txt','w')", "file('file.txt','w')", "open('file.txt','write')"],
+      "respostaCorreta": "open('file.txt','w')"
+    },
+    {
+      "id": 12,
+      "titulo": "Context manager",
+      "enunciado": "Qual palavra chave usa gerenciamento de contexto?",
+      "perguntas": ["with", "using", "enter", "open"],
+      "respostaCorreta": "with"
+    },
+    {
+      "id": 13,
+      "titulo": "Enumerate",
+      "enunciado": "O que enumerate(lista) retorna?",
+      "perguntas": ["Tuplas (indice,valor)", "Valores so", "Indices so", "Dicionario"],
+      "respostaCorreta": "Tuplas (indice,valor)"
+    },
+    {
+      "id": 14,
+      "titulo": "Uso de zip",
+      "enunciado": "Como emparelhar dois iteraveis ao mesmo tempo?",
+      "perguntas": ["zip(iter1,iter2)", "pair(iter1,iter2)", "map(zip,iter1,iter2)", "iter1.zip(iter2)"],
+      "respostaCorreta": "zip(iter1,iter2)"
+    },
+    {
+      "id": 15,
+      "titulo": "Args variaveis",
+      "enunciado": "Qual sintaxe para receber argumentos variaveis posicionalmente?",
+      "perguntas": ["*args", "**kwargs", "*kwargs", "**args"],
+      "respostaCorreta": "*args"
+    },
+    {
+      "id": 16,
+      "titulo": "Kwargs variaveis",
+      "enunciado": "Como receber argumentos nomeados variaveis?",
+      "perguntas": ["**kwargs", "*args", "kwargs", "*kwargs"],
+      "respostaCorreta": "**kwargs"
+    },
+    {
+      "id": 17,
+      "titulo": "Recursao",
+      "enunciado": "Qual termo para funcao que chama a si mesma?",
+      "perguntas": ["Recursao", "Loop", "Lambda", "Coroutine"],
+      "respostaCorreta": "Recursao"
+    },
+    {
+      "id": 18,
+      "titulo": "Invertendo lista",
+      "enunciado": "Como inverter lista usando slicing?",
+      "perguntas": ["lista[::-1]", "reverse(lista)", "lista.reverse()", "lista[::-2]"],
+      "respostaCorreta": "lista[::-1]"
+    },
+    {
+      "id": 19,
+      "titulo": "Time sleep",
+      "enunciado": "Qual funcao faz programa pausar por segundos?",
+      "perguntas": ["time.sleep()", "sleep.time()", "delay()", "wait()"],
+      "respostaCorreta": "time.sleep()"
+    },
+    {
+      "id": 20,
+      "titulo": "Type hints",
+      "enunciado": "Como anotar tipo retorno de funcao que recebe int?",
+      "perguntas": ["def foo(x: int) -> int:", "def foo(x) #int", "function foo(x:int):int", "def foo(x:int):"],
+      "respostaCorreta": "def foo(x: int) -> int:"
+    }
+  ],
+  "dificil": [
+    {
+      "id": 1,
+      "titulo": "Metaclasse",
+      "enunciado": "Como voce especifica uma metaclasse em definicao de classe?",
+      "perguntas": ["class A(metaclass=Meta):", "class A extends Meta:", "class A: Meta=Meta", "metaclass A(Meta):"],
+      "respostaCorreta": "class A(metaclass=Meta):"
+    },
+    {
+      "id": 2,
+      "titulo": "Descriptor __get__",
+      "enunciado": "O que __get__ faz em um descriptor?",
+      "perguntas": ["Retorna valor gerenciado", "Define atributo", "Chama funcao", "Nada"],
+      "respostaCorreta": "Retorna valor gerenciado"
+    },
+    {
+      "id": 3,
+      "titulo": "Context manager custom",
+      "enunciado": "Quais metodos voce implementa em um context manager?",
+      "perguntas": ["__enter__ e __exit__", "__start__ e __stop__", "__open__ e __close__", "init e close"],
+      "respostaCorreta": "__enter__ e __exit__"
+    },
+    {
+      "id": 4,
+      "titulo": "Coroutine async",
+      "enunciado": "Como voce declara uma coroutine com async/await?",
+      "perguntas": ["async def foo():", "def foo() async:", "def async foo():", "async foo():"],
+      "respostaCorreta": "async def foo():"
+    },
+    {
+      "id": 5,
+      "titulo": "Asyncio run",
+      "enunciado": "Qual funcao roda loop principal no asyncio?",
+      "perguntas": ["asyncio.run()", "asyncio.start()", "loop.run()", "asyncio.loop()"],
+      "respostaCorreta": "asyncio.run()"
+    },
+    {
+      "id": 6,
+      "titulo": "Threading basico",
+      "enunciado": "Como voce inicia thread em Python usando Thread class?",
+      "perguntas": ["threading.Thread(target=func).start()", "Thread.start(func)", "start Thread(func)", "thread.start(func)"],
+      "respostaCorreta": "threading.Thread(target=func).start()"
+    },
+    {
+      "id": 7,
+      "titulo": "Multiprocessing",
+      "enunciado": "Que modulo voce usa para criar processos?",
+      "perguntas": ["multiprocessing", "threading", "asyncio", "os"],
+      "respostaCorreta": "multiprocessing"
+    },
+    {
+      "id": 8,
+      "titulo": "Weakref",
+      "enunciado": "Qual modulo para referencias fracas?",
+      "perguntas": ["weakref", "gc", "ref", "strongref"],
+      "respostaCorreta": "weakref"
+    },
+    {
+      "id": 9,
+      "titulo": "GIL em CPython",
+      "enunciado": "O que GIL significa em CPython?",
+      "perguntas": ["Global Interpreter Lock", "General Init Lock", "Global IO Loop", "Generic Interface List"],
+      "respostaCorreta": "Global Interpreter Lock"
+    },
+    {
+      "id": 10,
+      "titulo": "Dataclass",
+      "enunciado": "Qual decorador transforma classe em dataclass?",
+      "perguntas": ["@dataclass", "@data", "@dc", "@class"],
+      "respostaCorreta": "@dataclass"
+    },
+    {
+      "id": 11,
+      "titulo": "TypedDict",
+      "enunciado": "Qual do typing define um dict com tipos especificos?",
+      "perguntas": ["TypedDict", "DictType", "TypedDictType", "TypeDict"],
+      "respostaCorreta": "TypedDict"
+    },
+    {
+      "id": 12,
+      "titulo": "Optional type hint",
+      "enunciado": "Como voce especifica tipo opcional de int?",
+      "perguntas": ["Optional[int]", "int?", "Maybe[int]", "int|None"],
+      "respostaCorreta": "Optional[int]"
+    },
+    {
+      "id": 13,
+      "titulo": "Union type",
+      "enunciado": "Qual sintaxe para Union de tipos?",
+      "perguntas": ["Union[int,str]", "int|string", "int|str", "intUnionstr"],
+      "respostaCorreta": "Union[int,str]"
+    },
+    {
+      "id": 14,
+      "titulo": "Pattern matching",
+      "enunciado": "Qual palavra chave inicia pattern matching no Python 3.10?",
+      "perguntas": ["match", "switch", "case", "select"],
+      "respostaCorreta": "match"
+    },
+    {
+      "id": 15,
+      "titulo": "Case default",
+      "enunciado": "Qual sintaxe para case default em match?",
+      "perguntas": ["case _:", "case default:", "case else:", "case *:"],
+      "respostaCorreta": "case _:"
+    },
+    {
+      "id": 16,
+      "titulo": "Generator expression",
+      "enunciado": "Qual sintaxe cria generator em vez de lista?",
+      "perguntas": ["(x for x in lista)", "[x for x in lista]", "{x for x in lista}", "<x for x in lista>"],
+      "respostaCorreta": "(x for x in lista)"
+    },
+    {
+      "id": 17,
+      "titulo": "Memoryview",
+      "enunciado": "Para que serve memoryview?",
+      "perguntas": ["Manipular buffer sem copia", "Gerenciar memoria manual", "Converter tipos", "Nada"],
+      "respostaCorreta": "Manipular buffer sem copia"
+    },
+    {
+      "id": 18,
+      "titulo": "Importlib",
+      "enunciado": "Qual modulo carrega modulos dinamicamente?",
+      "perguntas": ["importlib", "sys", "os", "builtins"],
+      "respostaCorreta": "importlib"
+    },
+    {
+      "id": 19,
+      "titulo": "Monkey patching",
+      "enunciado": "O que e monkey patching?",
+      "perguntas": ["Alterar codigo em runtime", "Despachar processos", "Executar funcoes assincronas", "Nada"],
+      "respostaCorreta": "Alterar codigo em runtime"
+    },
+    {
+      "id": 20,
+      "titulo": "Introspecao",
+      "enunciado": "Qual funcao retorna atributos de objeto?",
+      "perguntas": ["dir()", "vars()", "inspect()", "getattr()"],
+      "respostaCorreta": "dir()"
+    }
+  ]
+}
