@@ -1,0 +1,135 @@
+.contentSelect {
+
+    width: max-content;
+    position: relative;
+    height: max-content;
+    user-select: none;
+
+}
+
+.selectHandle {
+
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(16px);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 5px 0px var(--text-color);
+    opacity: .9;
+    font-size: clamp(1rem, 4vw + 4px, 1.4rem);
+    width: clamp(16em, 20vw + 2em, 22em);
+    overflow: hidden;
+
+}
+
+.iconSelect {
+
+    position: absolute;
+    right: 10px;
+    top:50%;
+    transition: .4s ease transform;
+
+}
+
+.origem {
+
+    transform: translateY(-50%);
+
+}
+
+.inverter {
+
+    transform: translateY(-50%) rotate(180deg);
+
+}
+
+.checkbox {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+
+}
+
+.dropdownSelect {
+
+    position: absolute;
+    padding: .5rem;
+    top: 105%;
+    width: 100%;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 0px var(--text-color);
+    z-index: 100;
+    backdrop-filter: blur(16px);
+    overflow-y: scroll;
+
+}
+
+.optionContent {
+
+    border-radius: 8px;
+    flex: 50px 1 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.dropdownSelect::-webkit-scrollbar {
+
+    width: 12px;
+
+}
+
+.dropdownSelect::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
+
+.dropdownSelect::-webkit-scrollbar-button {
+
+    display: block;
+
+}
+
+
+.dropdownSelect::-webkit-scrollbar-thumb {
+
+    background: var(--shadow-default-color);
+    border-radius: 8px;
+
+}
+
+
+
+
+.radioOption {
+   
+    all:unset;
+    height: 50px;
+
+}
+
+
+.optionContent:hover {
+
+    background-color: var(--btn-bg);
+    opacity: 0.8;
+
+}
+
