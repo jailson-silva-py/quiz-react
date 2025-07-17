@@ -28,7 +28,8 @@ export const fetchQuizNivel = (categoria:string, nivel:string) => {
 
 
 export const QuestoesEmbraralhadas =  (questoes:QuestaoQuiz[]) => {
-
+    
+    if(questoes) {
     const a = [...questoes]
     for (let i = a.length - 1; i > 0;--i) {
 
@@ -38,5 +39,6 @@ export const QuestoesEmbraralhadas =  (questoes:QuestaoQuiz[]) => {
     }
 
     return a
+    }
 
 }
