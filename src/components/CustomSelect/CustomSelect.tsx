@@ -1,4 +1,4 @@
-import { useEffect, useState, type ChangeEvent, type ChangeEventHandler, type ReactEventHandler } from 'react'
+import { useEffect, useState, type ChangeEvent, type ChangeEventHandler } from 'react'
 import classes from './CustomSelect.module.css'
 import { HiChevronDown } from 'react-icons/hi'
 import { motion, AnimatePresence, useAnimation } from 'framer-motion'
