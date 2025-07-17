@@ -18,8 +18,8 @@ export const TypeQuizContext = createContext<ContextValues>(initialContext)
 
 const initialState = {
 
-    nivel:null,
-    categoria:null
+    nivel:'',
+    categoria:''
 
 }
 
