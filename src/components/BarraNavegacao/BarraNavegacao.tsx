@@ -42,6 +42,7 @@ const BarraNavegacao = () => {
             transition={{duration:.4}}>
 
                 <li className={classes.menuListaItem}>
+                  
                     <HiOutlineHome size={32} className={classes.icon}/>
                     <NavLink to="/" className={classes.link}>Home</NavLink>
                 </li>
