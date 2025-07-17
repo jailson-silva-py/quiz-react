@@ -2,10 +2,9 @@ import useTypeQuizContext from "../hooks/useTypeQuizContext"
 import useQuizGameContext from "../hooks/useQuizGameContext"
 import { fetchQuizNivel, QuestoesEmbraralhadas } from "../services/quizService"
 import { type FormEvent, useMemo } from 'react'
-import { AnimatePresence, easeIn, easeInOut, motion } from 'framer-motion'
+import { AnimatePresence, easeInOut, motion } from 'framer-motion'
 import classes from '../styles/Quiz.module.css'
 import { useNavigate } from "react-router-dom"
-import { q } from "motion/react-m"
 
 const Quiz =() => {
 
