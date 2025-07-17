@@ -46,7 +46,28 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    opacity: 0.8;
     gap:.4rem;
+
+}
+
+.menuListaItem:hover {
+
+    opacity: 1;
+
+}
+
+@keyframes pular {
+
+    0%, 50%, 100%{transform: translateY(0);}
+    25%, 75%{transform: translateY(-2px)}
+
+}
+
+.menuListaItem:hover > svg  {
+
+    stroke-width: 1.5;
+    animation: 1s infinite pular;
 
 }
 
