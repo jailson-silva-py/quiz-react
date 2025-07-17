@@ -3,27 +3,44 @@ import classes from '../styles/Home.module.css'
 import { type ChangeEvent, type FormEvent } from 'react'
 import useTypeQuizContext from '../hooks/useTypeQuizContext'
 import { motion } from 'framer-motion'
+import CustomSelect from '../components/CustomSelect/CustomSelect'
 
 const Home = () => {
 
     const navigate = useNavigate()
-    const { dispatch } = useTypeQuizContext()
+    const { state, dispatch } = useTypeQuizContext()
+
+    const categoriaOptions = [{value:'',text:'Selecione a categoria...'},
+        {value:'html', text:'HTML'}, 
+        {value:'css', text:'CSS'}, {value:'js', text:'Javascript'}, 
+        {value:'react', text:'React'}, {value:'ts', text:'Typescript'},
+        {value:'python', text:'Python'}, {value:'java', text:'Java'}
+    ]
+
+    const nivelOptions = [{value:'',text:'Selecione o nível...'},
+        {value:'facil', text:'Fácil'}, {value:'medio', text:'Médio'},
+        {value:'dificil', text:'Difícil'}
+    ]
 
 
-
-    const handleNivelSeletor = (e:ChangeEvent<HTMLSelectElement>) => {
+    const handleNivelSeletor = (e:ChangeEvent<HTMLInputElement>) => {
        
         dispatch({type:'SET_NIVEL', payload: String(e.target.value)})
 
     }
 
-    const handleCategoriaSeletor = (e:ChangeEvent<HTMLSelectElement>) => {
+    const handleCategoriaSeletor = (e:ChangeEvent<HTMLInputElement>) => {
       
         dispatch({type:'SET_CATEGORIA', payload: String(e.target.value)})
 
     }
     const handleSubmit = (e:FormEvent) => {
         e.preventDefault()
+        if (!state.categoria || !state.nivel!) {
+
+            return 
+
+        }
         navigate('/quiz')
 
     }
@@ -39,31 +56,11 @@ const Home = () => {
 
         <form onSubmit={handleSubmit} className={classes.formulario}>
 
+        <CustomSelect options={nivelOptions} handleSelection={handleNivelSeletor}/>
 
-        <motion.select onChange={handleNivelSeletor} className={classes.seletor}
-        required>
-
-            <option value="">-- Selecione o nível --</option>
-            <option value="facil">Fácil</option>
-            <option value="medio">Médio</option>
-            <option value="dificil">Difícil</option>
-          
-        </motion.select>
-
-
-        <select onChange={handleCategoriaSeletor} className={classes.seletor} required>
-
-            <option value="" className={classes.nivelSeletorOp}>-- Selecione a categoria --</option>
-            <option value="js">Javascript</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="react">React</option>
-            <option value="ts">Typescript</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-          
-        </select>
-
+        
+        <CustomSelect options={categoriaOptions} handleSelection={handleCategoriaSeletor}/>
+       
         
         <button type="submit" className={classes.btn}>Iniciar</button>
         </form>
