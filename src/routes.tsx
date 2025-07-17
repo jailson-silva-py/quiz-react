@@ -6,6 +6,9 @@ import Quiz from './pages/Quiz'
 import { TypeQuizContextProvider } from "./contexts/TypeQuizContext";
 import Sobre from './pages/Sobre'
 import Contato from './pages/Contato'
+import { QuizGameContextProvider } from "./contexts/QuizGameContext";
+import FinalGame from "./pages/FinalGame";
+import { MessageContextProvider } from "./contexts/MessageContext";
 
 const rotasArray:RouteObject[] = [
 
@@ -24,7 +27,7 @@ const rotasArray:RouteObject[] = [
             {
 
                 path:'/quiz',
-                element:<Quiz/>
+                element:<QuizGameContextProvider><Quiz/></QuizGameContextProvider>
 
             },
             {
@@ -39,6 +42,13 @@ const rotasArray:RouteObject[] = [
                 element:<Contato/>
 
             }, 
+
+            {
+
+                path:'/final_game',
+                element:<FinalGame/>
+
+            }
             
         ]
 
@@ -51,9 +61,11 @@ const criadorRotas = createBrowserRouter(rotasArray)
 export default () => {
 
     return(
+    <MessageContextProvider>
     <TypeQuizContextProvider>
     <RouterProvider router={criadorRotas}/>
     </TypeQuizContextProvider>
+    </MessageContextProvider>
 )
 
 }
